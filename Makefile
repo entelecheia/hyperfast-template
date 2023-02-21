@@ -106,3 +106,6 @@ init-project: install-copier ## initialize the project
 
 init-project-force: install-copier ## initialize the project ignoring existing files (*Warning* this will overwrite existing files!)
 	@copier --answers-file .copier-config.yaml --force --vcs-ref=HEAD . .
+
+init-git: ## initialize git
+	@git init
