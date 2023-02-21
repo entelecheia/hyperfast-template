@@ -99,30 +99,6 @@ The template supports Python 3.7, 3.8, 3.9, and 3.10.
 [semantic versioning]: https://semver.org
 [xdoctest]: https://github.com/Erotemic/xdoctest
 
-# Workflows
-
-### CI (Continuous Integration)
-
-#### [Lint](.github/workflows/ci-linter.yaml)
-
-The `Lint` workflow is automatically triggered whenever there is push activity in `main` or pull request activity towards `main`. It has one job:
-
-- Lint the codebase with GitHub's [Super-Linter](https://github.com/github/super-linter).
-
-### CD (Continuous Deployment)
-
-#### [Release](.github/workflows/cd-release.yaml)
-
-The `Release` workflow is automatically triggered whenever there is push activity in `main` or pull request activity towards `main`. It has one job:
-
-- Create a release draft with [semantic-release](https://github.com/semantic-release/semantic-release)
-
-#### [Publish docs via GitHub Pages](.github/workflows/cd-cd-publish.yaml)
-
-The `Publish docs via GitHub Pages` workflow is automatically triggered whenever there is push activity in `main` or pull request activity towards `main`. It has one job:
-
-- Publish the documentation to GitHub Pages with [MkDocs](https://www.mkdocs.org/)
-
 ## Semantic Release
 
 ### Commit message format
