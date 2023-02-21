@@ -1,5 +1,5 @@
 ---
-name: prerelease
+name: semantic-prerelease
 
 on:
   workflow_call:
