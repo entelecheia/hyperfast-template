@@ -60,14 +60,21 @@ build: ## build the package
 
 ##@ Git Branches
 
-git-current-branch: ## returns the current git branch
-	@git rev-parse --abbrev-ref HEAD
+show-branches: ## show all branches
+	@git show-branch --list
 
-git-branch-exists: ## returns true if the branch exists
-	@git show-ref --verify --quiet refs/heads/$(branch)
+git-checkout-dev: ## checkout the dev branch
+	@BRANCH=$(shell echo $${BRANCH:-"dev"}) && \
+	    git show-branch --list | grep -q $${BRANCH} && \
+		git checkout $${BRANCH}
 
-git-branch-create: ## creates a new branch
-	@git checkout -b $(branch)
+git-checkout-dev-upstream: ## create and checkout the dev branch, and set the upstream
+	@BRANCH=$(shell echo $${BRANCH:-"dev"}) && \
+		git checkout -b $${BRANCH} && \ 
+		git push --set-upstream origin $${BRANCH} || true
+
+git-checkout-main: ## checkout the main branch
+	@git checkout main
 
 ##@ Setup
 
