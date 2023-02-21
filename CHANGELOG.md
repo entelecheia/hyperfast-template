@@ -1,5 +1,9 @@
 <!--next-version-placeholder-->
 
+## v0.1.0 (2023-02-21)
+### Feature
+* Initial version ([`d5b9e69`](https://github.com/entelecheia/hyperfast-template/commit/d5b9e6987fb70f6bd63698b9dc7a2f35545df26e))
+
 ## v0.0.1-rc.3 (2023-02-21)
 
 
