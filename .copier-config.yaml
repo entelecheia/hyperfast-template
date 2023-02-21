@@ -1,21 +1,19 @@
 # Changes here will be overwritten by Copier; do NOT edit manually
-_commit: v0.0.1-rc.14-3-g4621530
+_commit: 7060d3c
 _src_path: .
 author: Young Joon Lee
 copyright_year: 2023
-documentaion_tool: mkdocs
-documentation_url: https://entelecheia.github.io/hyperfast-python-template
+documentation_url: https://entelecheia.github.io/hyperfast-template
 email: entelecheia@hotmail.com
-friendly_name: Hyperfast Python Template
-github_repo_name: hyperfast-python-template
+friendly_name: Hyperfast Template
+github_repo_name: hyperfast-template
 github_username: entelecheia
-package_name: hyperfastpy
-project_description: Hyperfast Python Template is a self-contained template that helps
-    you initialize your Python project inside the template. It is hyperfast in the
-    sense that the template itself is converted into a Python project in the blink
-    of an eye. It is also hyperfast in the sense that it helps you jump start your
-    project with the best practices in the Python community.
+project_description: Hyperfast Template is a self-contained template that helps you
+    initialize your project inside the template. It is hyperfast in the sense that
+    the template itself is converted into a project in the blink of an eye. It is
+    also hyperfast in the sense that it helps you jump start your project with the
+    best practices in the dev community.
 project_license: MIT
-project_name: hyperfast-python-template
-project_short_description: A python template that helps you jump start your project
+project_name: hyperfast-template
+project_short_description: A general template that helps you jump start your project
 

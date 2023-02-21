@@ -1,4 +1,4 @@
-# Hyperfast Python Template
+# Hyperfast Template
 
 [![license-image]][license-url]
 [![version-image]][release-url]
@@ -7,38 +7,38 @@
 [![jupyter-book-image]][jupyter book]
 
 <!-- Links: -->
-[hyperfast python template]: https://github.com/entelecheia/hyperfast-python-template
+[hyperfast template]: https://github.com/entelecheia/hyperfast-template
 
-[license-image]: https://img.shields.io/github/license/entelecheia/hyperfast-python-template
-[license-url]: https://github.com/entelecheia/hyperfast-python-template/blob/main/LICENSE
-[version-image]: https://img.shields.io/github/v/release/entelecheia/hyperfast-python-template?sort=semver
-[release-date-image]: https://img.shields.io/github/release-date/entelecheia/hyperfast-python-template
-[release-url]: https://github.com/entelecheia/hyperfast-python-template/releases
+[license-image]: https://img.shields.io/github/license/entelecheia/hyperfast-template
+[license-url]: https://github.com/entelecheia/hyperfast-template/blob/main/LICENSE
+[version-image]: https://img.shields.io/github/v/release/entelecheia/hyperfast-template?sort=semver
+[release-date-image]: https://img.shields.io/github/release-date/entelecheia/hyperfast-template
+[release-url]: https://github.com/entelecheia/hyperfast-template/releases
 [conventional-commits-image]: https://img.shields.io/badge/Conventional%20Commits-1.0.0-%23FE5196?logo=conventionalcommits&logoColor=white
 [jupyter-book-image]: https://jupyterbook.org/en/stable/_images/badge.svg
 
-[repo-url]: https://github.com/entelecheia/hyperfast-python-template
-[pypi-url]: https://pypi.org/project/hyperfast-python-template
-[docs-url]: https://entelecheia.github.io/hyperfast-python-template
-[changelog]: https://github.com/entelecheia/hyperfast-python-template/blob/main/CHANGELOG.md
-[contributing guidelines]: https://github.com/entelecheia/hyperfast-python-template/blob/main/CONTRIBUTING.md
+[repo-url]: https://github.com/entelecheia/hyperfast-template
+[pypi-url]: https://pypi.org/project/hyperfast-template
+[docs-url]: https://entelecheia.github.io/hyperfast-template
+[changelog]: https://github.com/entelecheia/hyperfast-template/blob/main/CHANGELOG.md
+[contributing guidelines]: https://github.com/entelecheia/hyperfast-template/blob/main/CONTRIBUTING.md
 <!-- Links: -->
 
-A python template that helps you jump start your project
+A general template that helps you jump start your project
 
-- Documentation: [https://entelecheia.github.io/hyperfast-python-template][docs-url]
-- GitHub: [https://github.com/entelecheia/hyperfast-python-template][repo-url]
-- PyPI: [https://pypi.org/project/hyperfast-python-template][pypi-url]
+- Documentation: [https://entelecheia.github.io/hyperfast-template][docs-url]
+- GitHub: [https://github.com/entelecheia/hyperfast-template][repo-url]
+- PyPI: [https://pypi.org/project/hyperfast-template][pypi-url]
 
-Hyperfast Python Template is a self-contained template that helps you initialize your Python project inside the template. It is hyperfast in the sense that the template itself is converted into a Python project in the blink of an eye. It is also hyperfast in the sense that it helps you jump start your project with the best practices in the Python community.
+Hyperfast Template is a self-contained template that helps you initialize your project inside the template. It is hyperfast in the sense that the template itself is converted into a project in the blink of an eye. It is also hyperfast in the sense that it helps you jump start your project with the best practices in the dev community.
 
 ## Quickstart
 
 There are three ways to use this project:
 
-- Use [Hyperfast Python Template] to create a new repository
+- Use [Hyperfast Template] to create a new repository
 - Use [Copier] to create a project to your local machine directly
-- Inject [Hyperfast Python Template] into an existing project
+- Inject [Hyperfast Template] into an existing project
 
 ### I. Use the template
 
@@ -52,14 +52,14 @@ There are three ways to use this project:
 ### II. Use Copier
 
 1. Install Copier with `pipx install copier`
-2. Run `copier gh:entelecheia/hyperfast-python-template path/to/destination`
+2. Run `copier gh:entelecheia/hyperfast-template path/to/destination`
 3. Initialize your project with `make init-git`
 4. Do your work
 
 ### III. Inject the template
 
 1. Install Copier with `pipx install copier`
-2. From the root of your project, run `copier gh:entelecheia/hyperfast-python-template .`
+2. From the root of your project, run `copier gh:entelecheia/hyperfast-template .`
 3. If your project is not a git repository, initialize it with `make init-git`
 4. Do your work
 
@@ -69,31 +69,14 @@ There are three ways to use this project:
 - [x] Automated changelog with [Conventional Commits] and [Python Semantic Release]
 - [x] Automated labeling to pull requests based on [Conventional Commits] with [Conventional Release Labels]
 - [x] Automated semantic versioning with [Python Semantic Release]
-- [x] Automated uploads to [PyPI] and [TestPyPI]
-- [x] Code coverage with [Pytest-Cov]
-- [x] Code formatting with [Black] and [Prettier]
 - [x] Continuous integration with [GitHub Actions]
-- [x] Coverage reporting with [Codecov]
-- [x] Documentation with [MkDocs], [Jupyter Book], and [Read the Docs]
-- [x] Import sorting with [isort]
-- [x] Linting with [pre-commit] and [Flake8]
+- [x] Documentation with [MkDocs], and [Read the Docs]
 - [x] Managing project labels with [GitHub Labeler]
 - [x] Managing projects with [Make]
 - [x] Packaging and dependency management with [Poetry]
 - [x] Hyperfast rendering of the template into a new project with [Copier]
-- [x] Static type-checking with [mypy]
 - [x] Support for [Conventional Commits]
 - [x] Support for [Semantic Versioning]
-- [x] Testing with [pytest]
-
-- [ ] Automated dependency updates with [Dependabot]
-- [ ] Automated Python syntax upgrades with [pyupgrade]
-- [ ] Automated release notes with [Release Drafter]
-- [ ] Automatic documentation from sources for [MkDocs] with [mkdocstrings]
-- [ ] Check documentation examples with [xdoctest]
-- [ ] Runtime type-checking with [Typeguard]
-- [ ] Security audit with [Bandit] and [Safety]
-- [ ] Test automation with [Nox]
 
 The template supports Python 3.7, 3.8, 3.9, and 3.10.
 
