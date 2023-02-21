@@ -1,10 +1,11 @@
 name: Labeler
 
 on:
+  workflow_dispatch:
+  workflow_call:
   push:
     branches:
-      - main
-      - master
+      # - main
 
 jobs:
   labeler:
@@ -16,4 +17,7 @@ jobs:
       - name: Run Labeler
         uses: crazy-max/ghaction-github-labeler@v4.0.0
         with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          yaml-file: .github/labels.yaml
           skip-delete: true
+          dry-run: false

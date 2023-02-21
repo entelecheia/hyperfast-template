@@ -1,10 +1,7 @@
 name: release-drafter
 on:
-  push:
-    branches:
-      - main
-      - release
-      - prerelease
+  workflow_dispatch:
+  workflow_call:
 
 jobs:
   draft_release:

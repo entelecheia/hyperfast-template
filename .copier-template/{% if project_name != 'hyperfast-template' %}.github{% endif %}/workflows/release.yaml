@@ -1,12 +1,12 @@
 ---
-name: release
+name: semantic-release
 
 on:
   workflow_call:
   workflow_dispatch:
   push:
     branches:
-      - release
+      - main
 
 permissions:
   contents: write
