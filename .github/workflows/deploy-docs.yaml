@@ -1,5 +1,5 @@
 ---
-name: deploy-mkdocs
+name: deploy-docs
 on:
   workflow_call:
   workflow_dispatch:
