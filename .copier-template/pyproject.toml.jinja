@@ -1,31 +1,23 @@
 [tool.poetry]
 name = "{{ project_name }}"
-version = "0.0.1-rc.7"
 description = "{{ project_short_description }}"
 authors = ["{{ author }} <{{ email }}>"]
 license = "{{ project_license }}"
 readme = "README.md"
+version = "0.0.0"
 
 [tool.poetry.dependencies]
 python = "^3.8.1"
-
-[tool.poetry.group.release.dependencies]
 python-semantic-release = "^7.33.1"
-setuptools-scm = "^7.1.0"
 
 [tool.commitizen]
 name = "cz_conventional_commits"
 version = "1.0.1"
 tag_format = "v$version"
 
-[tool.setuptools_scm]
-write_to = "docs/VERSION"
-write_to_template = '{version}'
-tag_regex = '^(?P<prefix>v)?(?P<version>[^\+]+)(?P<suffix>.*)?$'
-
 [tool.semantic_release]
 branch = "main"
-version_toml = "pyproject.toml:tool.poetry.version"
+version_pattern = "{{ version_pattern }}"
 version_source = "tag"
 commit_version_number = true # required for version_source = "tag"
 commit_subject = "chore(release): :rocket: {version} [skip ci]"

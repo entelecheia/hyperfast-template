@@ -21,7 +21,7 @@ project_name:
 friendly_name:
   default: "{{ project_name }}"
   type: str
-  help: What is your book title?
+  help: What is your project friendly name?
 
 project_short_description:
   type: str
@@ -70,3 +70,8 @@ dist_path:
   default: dist
   type: str
   help: What is your distribution path to publish?
+
+version_pattern:
+  default: ".version:{version}"
+  type: str
+  help: What is your version pattern for [tool.semantic_release]? (inside pyproject.toml)

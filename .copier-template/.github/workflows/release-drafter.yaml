@@ -2,7 +2,9 @@ name: release-drafter
 on:
   workflow_dispatch:
   workflow_call:
-
+  pull_request:
+    types: [opened]
+    
 jobs:
   draft_release:
     runs-on: ubuntu-latest

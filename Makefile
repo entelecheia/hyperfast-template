@@ -22,7 +22,7 @@ help:  ## Display this help
 ##@ Clean-up
 
 clean-docs-build: ## remove output files from mkdocs
-	@rm -rf docs/_site
+	@rm -rf site
 
 clean: clean-docs-build ## run all clean commands
 
@@ -51,12 +51,6 @@ prerelease-noop: ## release a pre-release without changing anything
 
 prerelease-ci: ## release a pre-release in CI
 	@poetry run semantic-release publish --prerelease -v DEBUG -D commit_author="github-actions <action@github.com>"
-
-scm-version: ## returns the version from the setuptools_scm
-	@poetry run python -m setuptools_scm
-
-build: ## build the package
-	@poetry build
 
 ##@ Git Branches
 
@@ -101,11 +95,11 @@ install-precommit-hooks: ## install pre-commit hooks
 generate-mkdocs-reqs: ## generate requirements.txt from requirements.in
 	@poetry run pip-compile --resolver=backtracking --output-file=docs/requirements.txt docs/requirements.in
 
-init-project: install-copier ## initialize the project
-	@copier --vcs-ref=HEAD . .
-
-init-project-force: install-copier ## initialize the project ignoring existing files (*Warning* this will overwrite existing files!)
+reinit-project-force: install-copier ## initialize the project ignoring existing files (*Warning* this will overwrite existing files!)
 	@copier --answers-file .copier-config.yaml --force --vcs-ref=HEAD . .
+
+init-project: install-copier ## initialize the project
+	@copier gh:entelecheia/hyperfast-template .
 
 init-git: ## initialize git
 	@git init

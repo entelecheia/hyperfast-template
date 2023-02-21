@@ -17,4 +17,4 @@ project_description: Hyperfast Template is a self-contained template that helps 
 project_license: MIT
 project_name: hyperfast-template
 project_short_description: A general template that helps you jump start your project
-
+version_pattern: .version:{version}
