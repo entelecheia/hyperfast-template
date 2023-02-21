@@ -123,7 +123,6 @@ See the [CHANGELOG] for more information.
 ## Contributing
 
 Contributions are welcome! Please see the [contributing guidelines] for more information.
-
 ## License
 
 This project is released under the [MIT License][license-url].
