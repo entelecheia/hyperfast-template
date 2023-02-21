@@ -1,0 +1,81 @@
+_subdirectory: .copier-template
+
+# Configure jinja2 defaults to make syntax highlighters lives easier
+_templates_suffix: .jinja
+_envops:
+  block_end_string: "%}"
+  block_start_string: "{%"
+  comment_end_string: "#}"
+  comment_start_string: "{#"
+  keep_trailing_newline: true
+  variable_end_string: "}}"
+  variable_start_string: "{{"
+
+_answers_file: .copier-config.yaml
+
+# questions
+project_name:
+  type: str
+  help: What is your project name?
+
+friendly_name:
+  default: "{{ project_name }}"
+  type: str
+  help: What is your book title?
+
+package_name:
+  default: "{{ project_name | replace('-', '_') }}"
+  type: str
+  help: What is your Python module name?
+
+project_short_description:
+  type: str
+  help: What is your project short description?
+
+project_description:
+  type: str
+  help: What is your project description?
+
+project_license:
+  type: str
+  choices:
+    - MIT
+    - CC-BY-4.0
+    - Apache-2.0
+    - GPLv3
+
+author:
+  type: str
+  help: What is your name?
+
+email:
+  type: str
+  help: What is your email?
+
+github_username:
+  type: str
+  help: What is your GitHub username?
+
+github_repo_name:
+  default: "{{ project_name }}"
+  type: str
+  help: What is your GitHub repository name?
+
+documentaion_tool:
+  default: mkdocs
+  type: str
+  choices:
+    - mkdocs
+    - jupyter-book
+    - none
+  help: What documentation tool do you want to use?
+
+copyright_year:
+  default: "{{ now().year }}"
+  type: int
+  help: What is the copyright year?
+
+documentation_url:
+  default: "https://{{ github_username }}.github.io/{{ github_repo_name }}"
+  type: str
+  help: What is your documentation URL?
