@@ -3,6 +3,7 @@
 # the pull_request_target event.
 name: conventional-release-labels
 on:
+  workflow_call:
   pull_request_target:
     types: [opened, edited]
 
@@ -11,3 +12,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: bcoe/conventional-release-labels@v1
+    with:
+      token: ${{ secrets.GITHUB_TOKEN }}

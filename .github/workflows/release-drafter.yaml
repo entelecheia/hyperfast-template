@@ -1,8 +1,9 @@
 name: release-drafter
 on:
+  workflow_call:
   push:
     branches:
-      - main
+      # - main
       - release
       - prerelease
 
