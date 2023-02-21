@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "hyperfast-template"
-version = "0.0.1-rc.2"
+version = "0.0.1-rc.7"
 description = "A general template that helps you jump start your project"
 authors = ["Young Joon Lee <entelecheia@hotmail.com>"]
 license = "MIT"
