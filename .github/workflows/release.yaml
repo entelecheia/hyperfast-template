@@ -4,6 +4,9 @@ name: release
 on:
   workflow_call:
   workflow_dispatch:
+  push:
+    branches:
+      - release
 
 permissions:
   contents: write
@@ -13,13 +16,10 @@ permissions:
 jobs:
   build:
     # Name the Job
-    name: semantic-release
+    name: release
     # Set the agent to run on
-    runs-on: ${{ matrix.os }}
-    strategy:
-      matrix:
-        os: [ubuntu-latest]
-        python-version: [3.8]
+    runs-on: ubuntu-latest
+    concurrency: prelease
 
     # Load all steps #
     steps:
@@ -29,18 +29,22 @@ jobs:
         with:
           fetch-depth: 0
 
-      # install copier
-      - name: Install copier
-        run: pipx install copier>=7.0.0
+      - name: Run Labeler
+        uses: crazy-max/ghaction-github-labeler@v4.0.0
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          yaml-file: .github/labels.yaml
+          skip-delete: true
+          dry-run: false
 
       # init project
       - name: Init project
-        run: make init-project-force
+        run: |
+          pipx install copier>=7.0.0
+          make init-project-force
 
-      # semantic release
+      # semantic prerelease
       - name: Python Semantic Release
         uses: relekang/python-semantic-release@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          repository_username: __token__
-          repository_password: ${{ secrets.PYPI_API_TOKEN }}

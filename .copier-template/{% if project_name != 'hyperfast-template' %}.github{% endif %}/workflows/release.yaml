@@ -1,0 +1,50 @@
+---
+name: release
+
+on:
+  workflow_call:
+  workflow_dispatch:
+  push:
+    branches:
+      - release
+
+permissions:
+  contents: write
+  issues: write
+  pull-requests: write
+
+jobs:
+  build:
+    # Name the Job
+    name: release
+    # Set the agent to run on
+    runs-on: ubuntu-latest
+    concurrency: prelease
+
+    # Load all steps #
+    steps:
+      # Checkout the code base #
+      - name: Checkout Code
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Run Labeler
+        uses: crazy-max/ghaction-github-labeler@v4.0.0
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          yaml-file: .github/labels.yaml
+          skip-delete: true
+          dry-run: false
+
+      # init project
+      - name: Init project
+        run: |
+          pipx install copier>=7.0.0
+          make init-project-force
+
+      # semantic prerelease
+      - name: Python Semantic Release
+        uses: relekang/python-semantic-release@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
