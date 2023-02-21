@@ -17,91 +17,14 @@
 .DEFAULT_GOAL := help
 .PHONY: help
 help:  ## Display this help
-	@awk 'BEGIN {FS = ":.*##"; printf "\nUsage:\n  make \033[36m<target>\033[0m\n"} /^[a-zA-Z_-]+:.*?##/ { printf "  \033[36m%-20s\033[0m %s\n", $$1, $$2 } /^##@/ { printf "\n\033[1m%s\033[0m\n", substr($$0, 5) } ' $(MAKEFILE_LIST)
-
-##@ Formatting
-
-.PHONY: format-black
-format-black: ## black (code formatter)
-	@poetry run black .
-
-.PHONY: format-isort
-format-isort: ## isort (import formatter)
-	@poetry run isort .
-
-.PHONY: format
-format: format-black format-isort ## run all formatters
-
-##@ Linting
-
-.PHONY: lint-black
-lint-black: ## black in linting mode
-	@poetry run black --check --diff .
-
-.PHONY: lint-isort
-lint-isort: ## isort in linting mode
-	@poetry run isort --check --diff .
-
-.PHONY: lint-flake8
-lint-flake8: ## flake8 (linter)
-	@poetry run flake8 .
-
-.PHONY: lint-mypy
-lint-mypy: ## mypy (static-type checker)
-	@poetry run mypy --config-file pyproject.toml .
-
-.PHONY: lint-mypy-report
-lint-mypy-report: ## run mypy & create report
-	@poetry run mypy --config-file pyproject.toml . --html-report ./mypy_html
-
-lint: lint-black lint-isort lint-flake8 lint-mypy ## run all linters
-
-##@ Running & Debugging
-
-.PHONY: run
-run: ## run the main script
-	@poetry run hyperfastpy
-
-##@ Testing
-
-.PHONY: tests
-tests: scm-version ## run tests with pytest
-	@poetry run pytest --doctest-modules
-
-.PHONY: tests-cov
-tests-cov: scm-version ## run tests with pytest and show coverage (terminal + html)
-	@poetry run pytest --doctest-modules --cov=src --cov-report term-missing --cov-report=html
-
-.PHONY: scm-version tests-cov-fail
-tests-cov-fail: ## run unit tests with pytest and show coverage (terminal + html) & fail if coverage too low & create files for CI
-	@poetry run pytest --doctest-modules --cov=src --cov-report term-missing --cov-report=html --cov-fail-under=80 --junitxml=pytest.xml | tee pytest-coverage.txt
-
-##@ Jupyter-Book
-
-book-build: ## build documentation locally
-	@poetry run jupyter-book build book
-
-book-build-all: ## build all documentation locally
-	@poetry run jupyter-book build book --all
-
-book-publish: ## publish documentation to "gh-pages" branch
-	@poetry run ghp-import -n -p -f book/_build/html
-
-book-deploy: ## build & publish documentation to "gh-pages" branch
-	book-build book-publish
+	@awk 'BEGIN {FS = ":.*##"; printf "\nUsage:\n  make \033[36m<target>\033[0m\n"} /^[a-zA-Z_-]+:.*?##/ { printf "  \033[36m%-25s\033[0m %s\n", $$1, $$2 } /^##@/ { printf "\n\033[1m%s\033[0m\n", substr($$0, 5) } ' $(MAKEFILE_LIST)
 
 ##@ Clean-up
 
-clean-cov: ## remove output files from pytest & coverage
-	@rm -rf .coverage
-	@rm -rf htmlcov
-	@rm -rf pytest.xml
-	@rm -rf pytest-coverage.txt
+clean-docs-build: ## remove output files from mkdocs
+	@rm -rf docs/_site
 
-clean-book-build: ## remove output files from mkdocs
-	@rm -rf book/_build
-
-clean: clean-cov clean-book-build ## run all clean commands
+clean: clean-docs-build ## run all clean commands
 
 ##@ Releases
 
@@ -135,6 +58,17 @@ scm-version: ## returns the version from the setuptools_scm
 build: ## build the package
 	@poetry build
 
+##@ Git Branches
+
+git-current-branch: ## returns the current git branch
+	@git rev-parse --abbrev-ref HEAD
+
+git-branch-exists: ## returns true if the branch exists
+	@git show-ref --verify --quiet refs/heads/$(branch)
+
+git-branch-create: ## creates a new branch
+	@git checkout -b $(branch)
+
 ##@ Setup
 
 install-pipx: ## install pipx (pre-requisite for external tools)
@@ -151,32 +85,17 @@ install-piptools: install-pipx ## install pip-tools (pre-requisite for install)
 
 install-prereqs: install-pipx  install-copier install-poetry install-piptools ## install all prerequisites
 
-install: ## install
+install-poetry-deps: ## install poetry dependencies
 	@poetry install
 
-install-dev: ## install dependencies
-	@poetry install --with dev
-
-install-linters: ## install linters
-	@poetry install --with lint
-
-install-test: ## install test dependencies
-	@poetry install --with test
-
-install-release: ## install release tools
-	@poetry install --only release
-
-install-book: ## install jupyter-book
-	@poetry install --only book
-
-install-precommit: ## install pre-commit hooks
+install-precommit-hooks: ## install pre-commit hooks
 	@pre-commit install
+
+generate-mkdocs-reqs: ## generate requirements.txt from requirements.in
+	@poetry run pip-compile --resolver=backtracking --output-file=docs/requirements.txt docs/requirements.in
 
 init-project: install-copier ## initialize the project
 	@copier --answers-file .copier-config.yaml --vcs-ref=HEAD . .
 
 init-project-force: install-copier ## initialize the project ignoring existing files (*Warning* this will overwrite existing files!)
 	@copier --answers-file .copier-config.yaml --force --vcs-ref=HEAD . .
-
-generate-mkdocs-reqs: ## generate requirements.txt from requirements.in
-	@poetry run pip-compile --resolver=backtracking --output-file=docs/requirements.txt docs/requirements.in

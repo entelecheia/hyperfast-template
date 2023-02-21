@@ -23,11 +23,6 @@ friendly_name:
   type: str
   help: What is your book title?
 
-package_name:
-  default: "{{ project_name | replace('-', '_') }}"
-  type: str
-  help: What is your Python module name?
-
 project_short_description:
   type: str
   help: What is your project short description?
@@ -60,15 +55,6 @@ github_repo_name:
   default: "{{ project_name }}"
   type: str
   help: What is your GitHub repository name?
-
-documentaion_tool:
-  default: mkdocs
-  type: str
-  choices:
-    - mkdocs
-    - jupyter-book
-    - none
-  help: What documentation tool do you want to use?
 
 copyright_year:
   default: "{{ now().year }}"
