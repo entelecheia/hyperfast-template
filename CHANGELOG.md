@@ -1,5 +1,9 @@
 <!--next-version-placeholder-->
 
+## v0.1.1 (2023-02-21)
+### Fix
+* **template:** Set upload_to_release to false ([`00d9b5b`](https://github.com/entelecheia/hyperfast-template/commit/00d9b5b258b3f076568d2d6b0a621318745729f0))
+
 ## v0.1.0 (2023-02-21)
 ### Feature
 * Initial version ([`d5b9e69`](https://github.com/entelecheia/hyperfast-template/commit/d5b9e6987fb70f6bd63698b9dc7a2f35545df26e))
