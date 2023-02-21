@@ -102,7 +102,7 @@ generate-mkdocs-reqs: ## generate requirements.txt from requirements.in
 	@poetry run pip-compile --resolver=backtracking --output-file=docs/requirements.txt docs/requirements.in
 
 init-project: install-copier ## initialize the project
-	@copier --answers-file .copier-config.yaml --vcs-ref=HEAD . .
+	@copier --vcs-ref=HEAD . .
 
 init-project-force: install-copier ## initialize the project ignoring existing files (*Warning* this will overwrite existing files!)
 	@copier --answers-file .copier-config.yaml --force --vcs-ref=HEAD . .
