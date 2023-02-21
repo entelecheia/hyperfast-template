@@ -5,7 +5,23 @@
 
 version: 2
 updates:
-  - package-ecosystem: "" # See documentation for possible values
-    directory: "/" # Location of package manifests
+  - package-ecosystem: "github-actions"
+    directory: "/"
     schedule:
-      interval: "weekly"
+      interval: "daily"
+      time: "03:00"
+      timezone: "Asia/Seoul"
+    labels:
+      - ":game_die: dependencies"
+      - ":robot: bot"
+  - package-ecosystem: "pip"
+    directory: "/"
+    schedule:
+      interval: "daily"
+      time: "03:00"
+      timezone: "Asia/Seoul"
+    allow:
+      - dependency-type: "production"
+    labels:
+      - ":game_die: dependencies"
+      - ":robot: bot"
