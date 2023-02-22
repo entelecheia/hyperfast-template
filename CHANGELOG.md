@@ -1,5 +1,9 @@
 <!--next-version-placeholder-->
 
+## v0.2.4 (2023-02-22)
+### Fix
+* Deploy docs action, update README ([`a4fde96`](https://github.com/entelecheia/hyperfast-template/commit/a4fde960937f3ad1b2ce028697ee75a331ab2758))
+
 ## v0.2.3 (2023-02-22)
 ### Fix
 * Github actions ([`6fc6c98`](https://github.com/entelecheia/hyperfast-template/commit/6fc6c9852c19352de5b126e1b598be8883614606))
