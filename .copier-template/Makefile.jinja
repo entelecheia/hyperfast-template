@@ -64,7 +64,7 @@ git-checkout-dev: ## checkout the dev branch
 
 git-checkout-dev-upstream: ## create and checkout the dev branch, and set the upstream
 	@BRANCH=$(shell echo $${BRANCH:-"dev"}) && \
-		git checkout -b $${BRANCH} && \
+		git checkout -B $${BRANCH} && \
 		git push --set-upstream origin $${BRANCH} || true
 
 git-checkout-main: ## checkout the main branch
