@@ -1,5 +1,9 @@
 <!--next-version-placeholder-->
 
+## v0.2.1 (2023-02-22)
+### Fix
+* Remove gitmoji hook, apply commitizen ([`e8c3183`](https://github.com/entelecheia/hyperfast-template/commit/e8c31834b40000d867edb3ba0b325fb076786ed0))
+
 ## v0.2.0 (2023-02-22)
 ### Feature
 * Add version pattern configuration. simplify configs ([`3657e12`](https://github.com/entelecheia/hyperfast-template/commit/3657e123f2b9c4e9fb6089aad92fd0fb31f74e42))
