@@ -45,18 +45,33 @@ There are three ways to use this project:
 3. Click `Create repository from template`
 4. Clone your new repository to your local machine
 5. Initialize your project with `make init-project`
+    ```bash
+    make init-project
+    ```
 6. Do your work
 
 ### II. Use Copier
 
 1. Install Copier with `pipx install copier`
+    ```bash
+    pipx install copier
+    ```
 2. Run `copier gh:entelecheia/hyperfast-template path/to/destination`
+    ```bash
+    copier gh:entelecheia/hyperfast-template path/to/destination
+    ```
 3. Do your work
 
 ### III. Inject the template
 
 1. Install Copier with `pipx install copier`
+    ```bash
+    pipx install copier
+    ```
 2. From the root of your project, run `copier gh:entelecheia/hyperfast-template .`
+    ```bash
+    copier gh:entelecheia/hyperfast-template .
+    ```
 3. Do your work
 
 ## Features
