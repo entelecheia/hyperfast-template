@@ -24,13 +24,13 @@ repos:
       - id: conventional-gitmoji
   - repo: local
     hooks:
-      - id: commitizen
-        name: commitizen check
-        entry: cz check
-        args: [--allow-abort, --commit-msg-file]
-        stages: [commit-msg]
-        language: system
-        require_serial: true
+      # - id: commitizen
+      #   name: commitizen check
+      #   entry: cz check
+      #   args: [--allow-abort, --commit-msg-file]
+      #   stages: [commit-msg]
+      #   language: system
+      #   require_serial: true
       - id: conventional-gitmoji
         name: gitmojify
         entry: gitmojify
