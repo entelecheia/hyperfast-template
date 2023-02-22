@@ -17,6 +17,7 @@ tag_format = "v$version"
 
 [tool.semantic_release]
 branch = "main"
+version_toml = "pyproject.toml:tool.poetry.version"
 version_pattern = "{{ version_file }}:VERSION={version}"
 version_source = "tag"
 commit_version_number = true # required for version_source = "tag"
