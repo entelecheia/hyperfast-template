@@ -1,5 +1,16 @@
 <!--next-version-placeholder-->
 
+## v0.2.0 (2023-02-22)
+### Feature
+* Add version pattern configuration. simplify configs ([`3657e12`](https://github.com/entelecheia/hyperfast-template/commit/3657e123f2b9c4e9fb6089aad92fd0fb31f74e42))
+
+### Fix
+* Missing version file ([`779458d`](https://github.com/entelecheia/hyperfast-template/commit/779458d731459d1a2b2eb26d19dcfafe3c61f2df))
+* Github action templates ([`64bb633`](https://github.com/entelecheia/hyperfast-template/commit/64bb633e18090df0ec7ebc1084f9a140f7fabc07))
+
+### Documentation
+* Update README ([`e9aeb42`](https://github.com/entelecheia/hyperfast-template/commit/e9aeb421eb1d158fe75c9c7d77940b0e7b11f4a2))
+
 ## v0.1.1 (2023-02-21)
 ### Fix
 * **template:** Set upload_to_release to false ([`00d9b5b`](https://github.com/entelecheia/hyperfast-template/commit/00d9b5b258b3f076568d2d6b0a621318745729f0))
