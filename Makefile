@@ -95,11 +95,11 @@ install-precommit-hooks: ## install pre-commit hooks
 generate-mkdocs-reqs: ## generate requirements.txt from requirements.in
 	@poetry run pip-compile --resolver=backtracking --output-file=docs/requirements.txt docs/requirements.in
 
-reinit-project-force: install-copier ## initialize the project ignoring existing files (*Warning* this will overwrite existing files!)
-	@copier --answers-file .copier-config.yaml --force --vcs-ref=HEAD . .
-
 init-project: install-copier ## initialize the project
 	@copier gh:entelecheia/hyperfast-template .
 
 init-git: ## initialize git
 	@git init
+
+reinit-project-force: install-copier ## initialize the project ignoring existing files (*Warning* this will overwrite existing files!)
+	@copier --answers-file .copier-config.yaml --force --vcs-ref=HEAD . .
