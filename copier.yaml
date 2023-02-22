@@ -71,7 +71,7 @@ dist_path:
   type: str
   help: What is your distribution path to publish?
 
-version_pattern:
-  default: ".version:{version}"
+version_file:
+  default: ".version"
   type: str
-  help: What is your version pattern for [tool.semantic_release]? (inside pyproject.toml)
+  help: What is your version file for [tool.semantic_release]? (inside pyproject.toml)

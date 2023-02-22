@@ -17,7 +17,7 @@ tag_format = "v$version"
 
 [tool.semantic_release]
 branch = "main"
-version_pattern = "{{ version_pattern }}"
+version_pattern = "{{ version_file }}:{version}"
 version_source = "tag"
 commit_version_number = true # required for version_source = "tag"
 commit_subject = "chore(release): :rocket: {version} [skip ci]"
