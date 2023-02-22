@@ -5,7 +5,7 @@ on:
   workflow_call:
   push:
     branches:
-      # - main
+      - main
 
 jobs:
   labeler:
