@@ -1,12 +1,16 @@
 ---
-name: semantic-release
+name: semantic-prerelease
 
 on:
   workflow_call:
   workflow_dispatch:
   push:
     branches:
-      - main
+      - pre*
+      - beta*
+      - alpha*
+      - rc*
+      - nigtly*
 
 permissions:
   contents: write
@@ -16,10 +20,10 @@ permissions:
 jobs:
   build:
     # Name the Job
-    name: release
+    name: prerelease
     # Set the agent to run on
     runs-on: ubuntu-latest
-    concurrency: prelease
+    concurrency: prerelease
 
     # Load all steps #
     steps:
@@ -29,19 +33,18 @@ jobs:
         with:
           fetch-depth: 0
 
-{% if project_name == 'hyperfast-template' -%}
       # init project
       - name: Init project
         run: |
           pipx install copier>=7.0.0
           make reinit-project-force
-{% endif -%}
 
       # semantic prerelease
       - name: Python Semantic Release
         uses: relekang/python-semantic-release@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
+          additional_options: --prerelease
 
       - name: Publish the release notes
         uses: release-drafter/release-drafter@v5.23.0

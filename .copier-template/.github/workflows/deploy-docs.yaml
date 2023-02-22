@@ -21,13 +21,11 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-{% if project_name == 'hyperfast-template' -%}
       # init project
       - name: Init project
         run: |
           pipx install copier>=7.0.0
           make reinit-project-force
-{% endif -%}
 
       - uses: actions/setup-python@v4
         with:
