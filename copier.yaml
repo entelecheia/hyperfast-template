@@ -57,7 +57,7 @@ github_repo_name:
   help: What is your GitHub repository name?
 
 copyright_year:
-  default: "{{ now().year }}"
+  default: "{{ '%Y' | strftime }}"
   type: int
   help: What is the copyright year?
 
