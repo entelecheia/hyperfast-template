@@ -7,11 +7,16 @@ _envops:
   block_start_string: "{%"
   comment_end_string: "#}"
   comment_start_string: "{#"
-  keep_trailing_newline: true
+  keep_trailing_newline: false
   variable_end_string: "}}"
   variable_start_string: "{{"
 
 _answers_file: .copier-config.yaml
+
+_tasks:
+    # Strings get executed under system's default shell
+    - "git init"
+    - "{% if github_repo_name %}git add remote origin https://github.com/{{ github_username }}/{{ github_repo_name }}.git{% else %}echo 'No GitHub repository name provided. Skipping git remote add.'{% endif %}"
 
 # questions
 project_name:
