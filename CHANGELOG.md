@@ -1,5 +1,9 @@
 <!--next-version-placeholder-->
 
+## v0.2.3 (2023-02-22)
+### Fix
+* Github actions ([`6fc6c98`](https://github.com/entelecheia/hyperfast-template/commit/6fc6c9852c19352de5b126e1b598be8883614606))
+
 ## v0.2.2 (2023-02-22)
 ### Fix
 * Update makefile for git-checkout-dev (-B) ([`3630049`](https://github.com/entelecheia/hyperfast-template/commit/36300490386b1e5acac07c4c70ed38f7e8177451))
