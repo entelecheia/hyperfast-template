@@ -51,15 +51,13 @@ There are three ways to use this project:
 
 1. Install Copier with `pipx install copier`
 2. Run `copier gh:entelecheia/hyperfast-template path/to/destination`
-3. Initialize your project with `make init-git`
-4. Do your work
+3. Do your work
 
 ### III. Inject the template
 
 1. Install Copier with `pipx install copier`
 2. From the root of your project, run `copier gh:entelecheia/hyperfast-template .`
-3. If your project is not a git repository, initialize it with `make init-git`
-4. Do your work
+3. Do your work
 
 ## Features
 
