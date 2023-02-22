@@ -1,5 +1,9 @@
 <!--next-version-placeholder-->
 
+## v0.2.5 (2023-02-22)
+### Fix
+* Add back version_toml ([`88c42ea`](https://github.com/entelecheia/hyperfast-template/commit/88c42ea5507e1dd80e0c7f48276795080a88d93e))
+
 ## v0.2.4 (2023-02-22)
 ### Fix
 * Deploy docs action, update README ([`a4fde96`](https://github.com/entelecheia/hyperfast-template/commit/a4fde960937f3ad1b2ce028697ee75a331ab2758))
