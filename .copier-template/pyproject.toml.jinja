@@ -17,10 +17,11 @@ tag_format = "v$version"
 
 [tool.semantic_release]
 branch = "main"
-version_pattern = "{{ version_file }}:{version}"
+version_pattern = "{{ version_file }}:VERSION={version}"
 version_source = "tag"
 commit_version_number = true # required for version_source = "tag"
 commit_subject = "chore(release): :rocket: {version} [skip ci]"
+commit_parser = "semantic_release.history.emoji_parser()"
 major_emoji = ":boom:"
 minor_emoji = ":sparkles:, :children_crossing:, :lipstick:, :iphone:, :egg:, :chart_with_upwards_trend:"
 patch_emoji = ":lock:, :bug:, :zap:, :goal_net:, :alien:, :wheelchair:, :speech_balloon:, :mag:, :apple:, :penguin:, :checkered_flag:, :robot:, :green_apple:"
