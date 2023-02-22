@@ -30,7 +30,3 @@ upload_to_release = false
 build_command = false
 dist_path = "dist"
 hvcs = "github" # hosting version control system, gitlab is also supported
-
-[build-system]
-requires = ["setuptools>=45", "setuptools_scm[toml]>=6.2"]
-build-backend = 'setuptools.build_meta'
