@@ -3,9 +3,6 @@ name: Labeler
 on:
   workflow_dispatch:
   workflow_call:
-  push:
-    branches:
-      - main
 
 jobs:
   labeler:
