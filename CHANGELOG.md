@@ -1,5 +1,14 @@
 <!--next-version-placeholder-->
 
+## v0.2.6 (2023-02-22)
+### Fix
+* CNAME template ([`9c2c2f3`](https://github.com/entelecheia/hyperfast-template/commit/9c2c2f374eb8d0705c1c2cf913d3adcc3e841222))
+* Gitignore for itself, add CNAME ([`ef10309`](https://github.com/entelecheia/hyperfast-template/commit/ef103090fb0ffe72652125b462de4cfa2e2266cd))
+
+### Documentation
+* Update README ([`f89a946`](https://github.com/entelecheia/hyperfast-template/commit/f89a9463e0d4bdd41694bdd2eb2797b5e6d4e778))
+* Update README ([`ec29e82`](https://github.com/entelecheia/hyperfast-template/commit/ec29e82bbc98642cd27f10385c1f1932f8d0f519))
+
 ## v0.2.5 (2023-02-22)
 ### Fix
 * Add back version_toml ([`88c42ea`](https://github.com/entelecheia/hyperfast-template/commit/88c42ea5507e1dd80e0c7f48276795080a88d93e))
