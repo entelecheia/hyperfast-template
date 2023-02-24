@@ -1,5 +1,9 @@
 <!--next-version-placeholder-->
 
+## v0.2.8 (2023-02-24)
+### Fix
+* Release actions ([`39be776`](https://github.com/entelecheia/hyperfast-template/commit/39be776d66a5a1bdf8f821489655897c8f39776b))
+
 ## v0.2.7 (2023-02-24)
 ### Fix
 * **makefile:** Change git checout command names ([`d5d6ba3`](https://github.com/entelecheia/hyperfast-template/commit/d5d6ba364a6b98f7fa339d640c4f5a8bf721dc72))
