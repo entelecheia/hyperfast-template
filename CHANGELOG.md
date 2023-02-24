@@ -1,5 +1,9 @@
 <!--next-version-placeholder-->
 
+## v0.2.11 (2023-02-24)
+### Fix
+* Github action templates ([`21226a1`](https://github.com/entelecheia/hyperfast-template/commit/21226a1057604adbfd0a441b37f5d87a59915049))
+
 ## v0.2.10 (2023-02-24)
 ### Fix
 * Index of mkdocs template ([`48d3c77`](https://github.com/entelecheia/hyperfast-template/commit/48d3c770e7d83be1738f222a4792396e45c1a222))
