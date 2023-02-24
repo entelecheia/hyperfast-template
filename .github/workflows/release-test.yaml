@@ -44,4 +44,4 @@ jobs:
         uses: relekang/python-semantic-release@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          additional_options: --noop --verbosity=DEBUG --no-commit --define=branch=${{ env.BRANCH }}
+          additional_options: --noop --verbosity=DEBUG --define=branch=${{ env.BRANCH }}
