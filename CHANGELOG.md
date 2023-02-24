@@ -1,5 +1,12 @@
 <!--next-version-placeholder-->
 
+## v0.2.7 (2023-02-24)
+### Fix
+* **makefile:** Change git checout command names ([`d5d6ba3`](https://github.com/entelecheia/hyperfast-template/commit/d5d6ba364a6b98f7fa339d640c4f5a8bf721dc72))
+
+### Documentation
+* Remove VERSION ([`b4776f5`](https://github.com/entelecheia/hyperfast-template/commit/b4776f5c46440ea3a8e4bc603aad08569a038392))
+
 ## v0.2.6 (2023-02-22)
 ### Fix
 * CNAME template ([`9c2c2f3`](https://github.com/entelecheia/hyperfast-template/commit/9c2c2f374eb8d0705c1c2cf913d3adcc3e841222))
