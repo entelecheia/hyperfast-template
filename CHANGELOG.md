@@ -1,5 +1,9 @@
 <!--next-version-placeholder-->
 
+## v0.2.10 (2023-02-24)
+### Fix
+* Index of mkdocs template ([`48d3c77`](https://github.com/entelecheia/hyperfast-template/commit/48d3c770e7d83be1738f222a4792396e45c1a222))
+
 ## v0.2.9 (2023-02-24)
 ### Fix
 * Makefile ([`8f64ea4`](https://github.com/entelecheia/hyperfast-template/commit/8f64ea458d523aca3268335d0c889b8d156a7b27))
