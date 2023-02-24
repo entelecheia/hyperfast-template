@@ -1,10 +1,10 @@
 ---
-name: semantic-release
+name: semantic-release-test
 
 on:
   workflow_call:
   workflow_dispatch:
-  push:
+  pull_request:
     branches:
       - main
 
@@ -16,10 +16,10 @@ permissions:
 jobs:
   build:
     # Name the Job
-    name: release
+    name: release-test
     # Set the agent to run on
     runs-on: ubuntu-latest
-    concurrency: release
+    concurrency: release-test
 
     # Load all steps #
     steps:
@@ -40,3 +40,4 @@ jobs:
         uses: relekang/python-semantic-release@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
+          additional_options: --noop --verbosity=DEBUG
