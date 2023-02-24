@@ -1,12 +1,13 @@
 ---
-name: semantic-release-test
+name: semantic-release-patch
 
 on:
   workflow_call:
   workflow_dispatch:
-  pull_request:
+  push:
     branches:
-      - main
+      - patch*
+      - hotfix*
 
 permissions:
   contents: write
@@ -16,7 +17,7 @@ permissions:
 jobs:
   build:
     # Name the Job
-    name: semantic-release-test
+    name: semantic-release-patch
     # Set the agent to run on
     runs-on: ubuntu-latest
 
@@ -28,13 +29,6 @@ jobs:
         with:
           fetch-depth: 0
 
-      # install copier and init project
-      - name: Install copier and init project
-        if: github.repository == 'entelecheia/hyperfast-template'
-        run: |
-          pipx install copier>=7.0.0
-          make reinit-project-force
-
       # set env variable
       - name: Set env variable
         run: echo "BRANCH=${GITHUB_REF#refs/heads/}" >> $GITHUB_ENV
@@ -44,4 +38,4 @@ jobs:
         uses: relekang/python-semantic-release@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          additional_options: --noop --verbosity=DEBUG --define=branch=${{ env.BRANCH }}
+          additional_options: --patch --verbosity=DEBUG --define=branch=${{ env.BRANCH }}
