@@ -16,10 +16,9 @@ permissions:
 jobs:
   build:
     # Name the Job
-    name: release-test
+    name: semantic-release-test
     # Set the agent to run on
     runs-on: ubuntu-latest
-    concurrency: release-test
 
     # Load all steps #
     steps:

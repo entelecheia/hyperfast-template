@@ -81,13 +81,16 @@ install-copier: install-pipx ## install copier (pre-requisite for init-project)
 install-poetry: install-pipx ## install poetry (pre-requisite for install)
 	@poetry --version &> /dev/null || pipx install poetry || true
 
-install-precommit: install-pipx ## install pre-commit
+install-commitzen: install-pipx ## install commitzen (pre-requisite for commit)
+	@cz version &> /dev/null || pipx install commitizen || true
+
+install-precommit: install-commitzen ## install pre-commit
 	@pre-commit --version &> /dev/null || pipx install pre-commit || true
 
 install-piptools: install-pipx ## install pip-tools (pre-requisite for install)
 	@pip-compile --version &> /dev/null || pipx install pip-tools || true
 
-install-prereqs: install-pipx  install-copier install-poetry install-piptools ## install all prerequisites
+install-prereqs: install-pipx  install-copier install-poetry install-piptools install-precommit ## install all prerequisites
 
 install-poetry-deps: ## install poetry dependencies
 	@poetry install
