@@ -26,7 +26,7 @@ project_name:
 friendly_name:
   default: "{{ project_name }}"
   type: str
-  help: What is your project friendly name?
+  help: What is your project friendly name? (it will be used fro the title of the documentation)
 
 project_short_description:
   type: str
@@ -43,6 +43,7 @@ project_license:
     - CC-BY-4.0
     - Apache-2.0
     - GPLv3
+    - None
 
 author:
   type: str
@@ -74,7 +75,7 @@ documentation_url:
 dist_path:
   default: dist
   type: str
-  help: What is your distribution path to publish?
+  help: What is your distribution path to publish? (the content of this folder will be published)
 
 version_file:
   default: ".version"
