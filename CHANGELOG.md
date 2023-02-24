@@ -1,5 +1,12 @@
 <!--next-version-placeholder-->
 
+## v0.2.9 (2023-02-24)
+### Fix
+* Makefile ([`8f64ea4`](https://github.com/entelecheia/hyperfast-template/commit/8f64ea458d523aca3268335d0c889b8d156a7b27))
+
+### Documentation
+* Update README ([`821eb55`](https://github.com/entelecheia/hyperfast-template/commit/821eb554af69c84fcb91ec92c98bef7fe1d681b4))
+
 ## v0.2.8 (2023-02-24)
 ### Fix
 * Release actions ([`39be776`](https://github.com/entelecheia/hyperfast-template/commit/39be776d66a5a1bdf8f821489655897c8f39776b))
