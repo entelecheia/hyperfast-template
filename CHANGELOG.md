@@ -1,5 +1,12 @@
 <!--next-version-placeholder-->
 
+## v0.2.12 (2023-02-27)
+### Fix
+* Docs requirements.txt ([`cea7fc4`](https://github.com/entelecheia/hyperfast-template/commit/cea7fc41faec1f76db77f28c84d52af73961710a))
+
+### Documentation
+* Add google analytics ([`7068ec2`](https://github.com/entelecheia/hyperfast-template/commit/7068ec292b60c3906be74c0602ae4a3865bd0a0c))
+
 ## v0.2.11 (2023-02-24)
 ### Fix
 * Github action templates ([`21226a1`](https://github.com/entelecheia/hyperfast-template/commit/21226a1057604adbfd0a441b37f5d87a59915049))
