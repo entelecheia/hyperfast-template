@@ -1,5 +1,9 @@
 <!--next-version-placeholder-->
 
+## v0.2.13 (2023-02-28)
+### Fix
+* Add .version file ([`6873b27`](https://github.com/entelecheia/hyperfast-template/commit/6873b27cd53cb23a2212e36cc86ea7b52224fd4b))
+
 ## v0.2.12 (2023-02-27)
 ### Fix
 * Docs requirements.txt ([`cea7fc4`](https://github.com/entelecheia/hyperfast-template/commit/cea7fc41faec1f76db77f28c84d52af73961710a))
