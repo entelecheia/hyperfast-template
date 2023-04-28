@@ -1,25 +1,16 @@
 site_name: Hyperfast Template
-plugins:
-  - search
-  - mkdocstrings:
-      handlers:
-        # See: https://mkdocstrings.github.io/python/usage/
-        python:
-          options:
-            docstring_style: sphinx
-markdown_extensions:
-  - markdown_include.include:
-      base_path: .
-  - pymdownx.arithmatex:
-      generic: true
-  - admonition
-  - pymdownx.highlight:
-      anchor_linenums: true
-      line_spans: __span
-      pygments_lang_class: true
-  - pymdownx.inlinehilite
-  - pymdownx.snippets
-  - pymdownx.superfences
+site_url: https://hyperfast-template.entelecheia.ai
+site_author: Young Joon Lee <entelecheia@hotmail.com>
+site_description: >-
+  A versatile project template designed to accelerate development and streamline project management using best practices and modern tools.
+# Repository
+repo_name: entelecheia/hyperfast-template
+repo_url: https://github.com/entelecheia/hyperfast-template
+
+# Copyright
+copyright: Copyright &copy; 2023 Young Joon Lee
+
+# Configuration
 theme:
   name: material
   palette:
@@ -34,6 +25,33 @@ theme:
     - content.tooltips
   favicon: https://assets.entelecheia.ai/favicon.png # favicon: Path to the favicon image
   logo: https://assets.entelecheia.ai/favicon.png # logo: Path to the book logo
+
+# Extensions
+markdown_extensions:
+  - markdown_include.include:
+      base_path: .
+  - pymdownx.arithmatex:
+      generic: true
+  - admonition
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+
+# Plugins
+plugins:
+  - search
+  - mkdocstrings:
+      handlers:
+        # See: https://mkdocstrings.github.io/python/usage/
+        python:
+          options:
+            docstring_style: sphinx
+
+# Customization
 extra_javascript:
   - javascripts/mathjax.js
   - https://polyfill.io/v3/polyfill.min.js?features=es6
@@ -42,3 +60,5 @@ extra:
   analytics:
     provider: google
     property: G-SY9MF3HBFB
+# Page tree
+
