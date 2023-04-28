@@ -26,7 +26,12 @@ theme:
     scheme: slate
   features:
     - navigation.expand
+    - content.action.edit
+    - content.action.view
+    - content.code.annotate
     - content.code.copy
+    # - content.tabs.link
+    - content.tooltips
   {% if favicon_path %}favicon: {{ favicon_path }} {% endif -%} # favicon: Path to the favicon image
   {% if logo_path %}logo: {{ logo_path }} {% endif -%} # logo: Path to the book logo
 extra_javascript:
