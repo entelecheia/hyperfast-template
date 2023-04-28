@@ -76,10 +76,19 @@ set-default-node: ## set default node
 	nvm alias default node
 
 install-pipx: ## install pipx (pre-requisite for external tools)
-	@pipx --version &> /dev/null || pip install --user pipx || true
+	@pipx --version &> /dev/null || pip3 install --user pipx || true
 
 install-copier: install-pipx ## install copier (pre-requisite for init-project)
-	@copier --version &> /dev/null || pipx install copier || true
+	@copier --version &> /dev/null || pipx install copier || pip3 install --user copier || true
+
+install-commitzen: install-pipx ## install commitzen (pre-requisite for commit)
+	@cz version &> /dev/null || pipx install commitizen || pip3 install --user commitizen || true
+
+install-precommit: install-commitzen ## install pre-commit
+	@pre-commit --version &> /dev/null || pipx install pre-commit || pip3 install --user pre-commit || true
+
+install-precommit-hooks: install-precommit ## install pre-commit hooks
+	@pre-commit install
 
 init-project: install-copier install-precommit-hooks ## initialize the project (Warning: do this only once!)
 	@copier gh:entelecheia/hyperfast-template .
