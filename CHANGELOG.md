@@ -1,3 +1,11 @@
+## [0.5.0](https://github.com/entelecheia/hyperfast-template/compare/v0.4.0...v0.5.0) (2023-04-28)
+
+
+### Features
+
+* **mkdocs:** add new markdown extensions and theme customization options ([7590f1d](https://github.com/entelecheia/hyperfast-template/commit/7590f1de230874728e3142f9184db44d6ee7bba3))
+* **mkdocs:** add new markdown extensions ([bd7d57a](https://github.com/entelecheia/hyperfast-template/commit/bd7d57ade41ec848ac718c9e96bc9f0628e54ea6))
+
 ## [0.4.0](https://github.com/entelecheia/hyperfast-template/compare/v0.3.2...v0.4.0) (2023-04-28)
 
 
