@@ -46,7 +46,7 @@ The "Hyperfast Template" is designed to help you create and manage your projects
 - [x] Enforced coding standards and best practices for JavaScript using [ESLint] and its configuration file `.eslintrc.json`
 - [x] Consistent code style using [Prettier] and its configuration file `.prettierrc`
 - [x] Ensured code quality with [pre-commit] and its configuration file `.pre-commit-config.yaml`
-- [x] Simplified Git hooks management with [Husky] and its configuration folder `.husky`, containing hook scripts
+- [x] Simplified Git hooks management with [Husky]
 - [x] Assisted commit message creation with [Commitizen] for standardized commit messages
 
 [conventional commits]: https://conventionalcommits.org
