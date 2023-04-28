@@ -1,7 +1,5 @@
 # See https://pre-commit.com for more information
 # See https://pre-commit.com/hooks.html for more hooks
-default_language_version:
-  python: python3
 default_install_hook_types: [commit-msg, pre-commit]
 default_stages: [commit, manual]
 fail_fast: true
@@ -13,11 +11,12 @@ repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v4.4.0
     hooks:
-      - id: trailing-whitespace
-      - id: end-of-file-fixer
       - id: check-yaml
       - id: check-json
       - id: check-added-large-files
+      # Prevent committing inline conflict markers
+      - id: check-merge-conflict
+        args: [--assume-in-merge]
   - repo: local
     hooks:
       - id: commitizen
@@ -27,3 +26,9 @@ repos:
         stages: [commit-msg]
         language: system
         require_serial: true
+      # Prevent committing .rej files
+      - id: forbidden-files
+        name: forbidden files
+        entry: found Copier update rejection files; review them and remove them
+        language: fail
+        files: "\\.rej$"
