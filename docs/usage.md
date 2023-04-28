@@ -33,41 +33,32 @@ There are two ways to use this project:
 
 ## Features
 
-- [x] Automated changelog with [Conventional Commits] and [Python Semantic Release]
-- [x] Automated dependency updates with [Dependabot]
+- [x] Automated changelog with [Conventional Commits] and [semantic release]
 - [x] Automated labeling to pull requests based on [Conventional Commits] with [Conventional Release Labels]
-- [x] Automated release notes with [Release Drafter]
-- [x] Automated semantic versioning with [Python Semantic Release]
+- [x] Automated semantic versioning with [semantic release]
 - [x] Continuous integration with [GitHub Actions]
 - [x] Documentation with [MkDocs], and [Read the Docs]
+- [x] Automated dependency updates with [Dependabot]
 - [x] Hyperfast rendering of the template into a new project with [Copier]
-- [x] Managing project labels with [GitHub Labeler]
 - [x] Managing projects with [Make]
-- [x] Packaging and dependency management with [Poetry]
 - [x] Support for [Conventional Commits]
 - [x] Support for [Semantic Versioning]
-
-The template supports Python 3.7, 3.8, 3.9, and 3.10.
 
 [conventional commits]: https://conventionalcommits.org
 [conventional release labels]: https://github.com/marketplace/actions/conventional-release-labels
 [copier]: https://copier.readthedocs.io
 [dependabot]: https://dependabot.com/
 [github actions]: https://github.com/features/actions
-[github labeler]: https://github.com/marketplace/actions/github-labeler
-[isort]: https://pycqa.github.io/isort/
 [make]: https://www.gnu.org/software/make/
 [mkdocs]: https://www.mkdocs.org
 [myst]: https://myst-parser.readthedocs.io/
 [poetry]: https://python-poetry.org/
 [pre-commit]: https://pre-commit.com/
 [prettier]: https://prettier.io/
-[python semantic release]: https://python-semantic-release.readthedocs.io/en/latest/
+[semantic release]: https://semantic-release.gitbook.io/semantic-release/
 [read the docs]: https://readthedocs.org/
-[release drafter]: https://github.com/release-drafter/release-drafter
 [safety]: https://github.com/pyupio/safety
 [semantic versioning]: https://semver.org
-[xdoctest]: https://github.com/Erotemic/xdoctest
 
 ## Semantic Release
 

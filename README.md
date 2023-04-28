@@ -26,7 +26,7 @@ A general template that helps you jump start your project
 - Documentation: [https://hyperfast-template.entelecheia.ai][docs-url]
 - GitHub: [https://github.com/entelecheia/hyperfast-template][repo-url]
 
-Hyperfast Template is a self-contained template that helps you initialize your project inside the template. It is hyperfast in the sense that the template itself is converted into a project in the blink of an eye. It is also hyperfast in the sense that it helps you jump start your project with the best practices in the dev community.
+Hyperfast Template is a template that helps you initialize your project. It is hyperfast in the sense that it helps you jump start your project with the best practices in the dev community.
 
 ## Changelog
 
