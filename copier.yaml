@@ -15,6 +15,7 @@ _answers_file: .copier-config.yaml
 
 _tasks:
   # Strings get executed under system's default shell
+  - 'chmod +x .husky/pre-commit .husky/_/husky.sh'
   - '[ -d .git ] || git init'
   - "{% if github_repo_name %}git add remote origin https://github.com/{{ github_username }}/{{ github_repo_name }}.git 2>/dev/null || echo 'origin already exists'{% else %}echo 'No GitHub repository name provided. Skipping git remote add.'{% endif %}"
 

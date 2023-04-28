@@ -31,23 +31,23 @@ The "Hyperfast Template" is designed to help you create and manage your projects
    ```
 3. Continue working on your project with the added benefits of the Hyperfast Template.
 
-### Features
+## Features
 
-- [x] Automated changelog with [Conventional Commits] and [semantic release]
-- [x] Automated labeling for pull requests based on [Conventional Commits] using [Conventional Release Labels]
-- [x] Automated semantic versioning with [semantic release]
-- [x] Continuous integration with [GitHub Actions]
-- [x] Documentation using [MkDocs] and [Read the Docs]
-- [x] Automated dependency updates with [Dependabot]
 - [x] Hyperfast rendering of the template into a new project using [Copier]
 - [x] Project management with [Make]
-- [x] Support for [Conventional Commits]
-- [x] Support for [Semantic Versioning]
+- [x] Support for [Conventional Commits] and [Semantic Versioning]
+- [x] Automated changelog with [semantic release]
+- [x] Automated semantic versioning with [semantic release]
+- [x] Automated labeling for pull requests based on [Conventional Commits] using [Conventional Release Labels]
+- [x] Continuous integration with [GitHub Actions]
+- [x] Automated dependency updates with [Dependabot]
+- [x] Documentation using [MkDocs] and [Read the Docs]
 - [x] Consistent coding styles across different text editors with [EditorConfig] and its configuration file `.editorconfig`
 - [x] Enforced coding standards and best practices for JavaScript using [ESLint] and its configuration file `.eslintrc.json`
 - [x] Consistent code style using [Prettier] and its configuration file `.prettierrc`
 - [x] Ensured code quality with [pre-commit] and its configuration file `.pre-commit-config.yaml`
-- [x] Simplified Git hooks management with [Husky] and its configuration file `.husky`
+- [x] Simplified Git hooks management with [Husky] and its configuration folder `.husky`, containing hook scripts
+- [x] Assisted commit message creation with [Commitizen] for standardized commit messages
 
 [conventional commits]: https://conventionalcommits.org
 [conventional release labels]: https://github.com/marketplace/actions/conventional-release-labels
@@ -66,6 +66,7 @@ The "Hyperfast Template" is designed to help you create and manage your projects
 [editorconfig]: https://editorconfig.org/
 [eslint]: https://eslint.org/
 [husky]: https://typicode.github.io/husky
+[commitizen]: https://github.com/commitizen/cz-cli
 
 ## Semantic Release
 
