@@ -12,6 +12,7 @@
         - 'src/**'
         - 'static/**'
         - 'package.json'
+        - '.copier-template/**'
   
   permissions:
     contents: write
