@@ -1,3 +1,10 @@
+## [0.3.2](https://github.com/entelecheia/hyperfast-template/compare/v0.3.1...v0.3.2) (2023-04-28)
+
+
+### Bug Fixes
+
+* **workflow:** add .copier-template to release files list ([f427b2c](https://github.com/entelecheia/hyperfast-template/commit/f427b2cd44f2cff606d625f274194b99e92ac8f1))
+
 ## [0.3.1](https://github.com/entelecheia/hyperfast-template/compare/v0.3.0...v0.3.1) (2023-04-28)
 
 
