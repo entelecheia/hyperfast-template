@@ -75,6 +75,12 @@ set-default-node: ## set default node
 	[ -s "$${NVM_DIR}/nvm.sh" ] && . "$${NVM_DIR}/nvm.sh"; \
 	nvm alias default node
 
+init-husky: ## initialize husky
+	@npx husky-init && npm install
+
+init-eslint: ## initialize eslint
+	@npm init @eslint/config
+
 install-pipx: ## install pipx (pre-requisite for external tools)
 	@pipx --version &> /dev/null || pip3 install --user pipx || true
 
