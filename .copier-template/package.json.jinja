@@ -13,7 +13,8 @@
     },
     "homepage": "{{ documentation_url }}",
     "scripts": {
-        "prebuild": "semantic-release --no-ci --dry-run --plugins @semantic-release/commit-analyzer @semantic-release/exec"
+        "prebuild": "semantic-release --no-ci --dry-run --plugins @semantic-release/commit-analyzer @semantic-release/exec",
+        "test": "echo \"No test specified. Please add tests to <package.json>\" && exit 0"
     },
     "devDependencies": {
         "@semantic-release/changelog": "^6.0.2",
