@@ -1,5 +1,5 @@
 # Changes here will be overwritten by Copier; do NOT edit manually
-_commit: v0.3.1-4-gf427b2c
+_commit: v0.3.2-2-g8f985a9
 _src_path: .
 author: Young Joon Lee
 build_and_release: true
@@ -13,14 +13,19 @@ github_repo_name: hyperfast-template
 github_username: entelecheia
 google_analytics_id: G-SY9MF3HBFB
 logo_path: https://assets.entelecheia.ai/favicon.png
-project_description: Hyperfast Template is a self-contained template that helps you
-    initialize your project inside the template. It is hyperfast in the sense that
-    the template itself is converted into a project in the blink of an eye. It is
-    also hyperfast in the sense that it helps you jump start your project with the
-    best practices in the dev community.
+project_description: The 'Hyperfast Template' is a comprehensive and customizable
+    template designed to help developers kick-start their projects with efficiency
+    and ease. This template incorporates numerous features and tools, including automated
+    changelog, semantic versioning, continuous integration, and documentation support.
+    In addition, it integrates essential code formatting, styling, and quality assurance
+    tools, such as EditorConfig, ESLint, Prettier, and pre-commit. By utilizing the
+    Hyperfast Template, developers can quickly set up new projects or inject the template
+    into existing ones, ensuring consistency, quality, and maintainability across
+    the entire development process.
 project_license: MIT
 project_name: hyperfast-template
-project_short_description: A general template that helps you jump start your project
+project_short_description: A versatile project template designed to accelerate development
+    and streamline project management using best practices and modern tools.
 upload_to_release: true
 upload_to_repository: true
 use_source_code_skeleton: true
