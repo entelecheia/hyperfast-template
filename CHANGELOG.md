@@ -1,3 +1,15 @@
+## [0.4.0](https://github.com/entelecheia/hyperfast-template/compare/v0.3.2...v0.4.0) (2023-04-28)
+
+
+### Features
+
+* add commitzen and precommit ([9d3c46a](https://github.com/entelecheia/hyperfast-template/commit/9d3c46a8dcd685780f15f680269220b3296bda49))
+
+
+### Bug Fixes
+
+* add husky script ([8f985a9](https://github.com/entelecheia/hyperfast-template/commit/8f985a91115e5b38f187612dafb30eca4a673850))
+
 ## [0.3.2](https://github.com/entelecheia/hyperfast-template/compare/v0.3.1...v0.3.2) (2023-04-28)
 
 
