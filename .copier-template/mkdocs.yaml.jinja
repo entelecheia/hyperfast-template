@@ -6,6 +6,7 @@ site_description: >-
 # Repository
 repo_name: {{ github_username }}/{{ github_repo_name }}
 repo_url: https://github.com/{{ github_username }}/{{ github_repo_name }}
+edit_uri: edit/main/docs/
 
 # Copyright
 copyright: Copyright &copy; {{ copyright_year }} {{ author }}
@@ -17,8 +18,8 @@ theme:
     scheme: slate
   features:
     - navigation.expand
-    # - content.action.edit
-    # - content.action.view
+    - content.action.edit
+    - content.action.view
     - content.code.annotate
     - content.code.copy
     # - content.tabs.link
