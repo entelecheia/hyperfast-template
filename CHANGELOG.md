@@ -1,3 +1,11 @@
+## [0.3.1](https://github.com/entelecheia/hyperfast-template/compare/v0.3.0...v0.3.1) (2023-04-28)
+
+
+### Bug Fixes
+
+* CHANGELOG location ([d5f26ba](https://github.com/entelecheia/hyperfast-template/commit/d5f26ba0c7568a7490d3be443e7c5573c14a0c62))
+* CHANGELOG location ([d805620](https://github.com/entelecheia/hyperfast-template/commit/d805620da86c728d26cc74f7676735c0c904f16e))
+
 ## [0.3.0](https://github.com/entelecheia/hyperfast-template/compare/v0.2.13...v0.3.0) (2023-04-28)
 
 ### Features
