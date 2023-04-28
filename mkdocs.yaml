@@ -26,6 +26,7 @@ theme:
     scheme: slate
   features:
     - navigation.expand
+    - content.code.copy
   favicon: https://assets.entelecheia.ai/favicon.png # favicon: Path to the favicon image
   logo: https://assets.entelecheia.ai/favicon.png # logo: Path to the book logo
 extra_javascript:
