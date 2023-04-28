@@ -1,14 +1,18 @@
 # Changes here will be overwritten by Copier; do NOT edit manually
-_commit: v0.2.8
+_commit: v0.2.13-5-g91645ab
 _src_path: .
 author: Young Joon Lee
+build_and_release: true
 copyright_year: 2023
 dist_path: dist
-documentation_url: https://entelecheia.github.io/hyperfast-template
+documentation_url: https://hyperfast-template.entelecheia.ai
 email: entelecheia@hotmail.com
+favicon_path: https://assets.entelecheia.ai/favicon.png
 friendly_name: Hyperfast Template
 github_repo_name: hyperfast-template
 github_username: entelecheia
+google_analytics_id: G-SY9MF3HBFB
+logo_path: https://assets.entelecheia.ai/favicon.png
 project_description: Hyperfast Template is a self-contained template that helps you
     initialize your project inside the template. It is hyperfast in the sense that
     the template itself is converted into a project in the blink of an eye. It is
@@ -17,4 +21,7 @@ project_description: Hyperfast Template is a self-contained template that helps 
 project_license: MIT
 project_name: hyperfast-template
 project_short_description: A general template that helps you jump start your project
-version_file: .version
+upload_to_release: true
+upload_to_repository: true
+use_source_code_skeleton: true
+

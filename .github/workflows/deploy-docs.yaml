@@ -12,6 +12,7 @@ on:
       - "mkdocs.yaml"
       - "docs/**.md"
       - "docs/images/**"
+      - ".github/workflows/deploy-docs.yaml"
 
 permissions:
   contents: write
@@ -21,13 +22,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-
-      # install copier and init project
-      - name: Install copier and init project
-        if: github.repository == 'entelecheia/hyperfast-template'
-        run: |
-          pipx install copier>=7.0.0
-          make reinit-project-force
 
       - uses: actions/setup-python@v4
         with:

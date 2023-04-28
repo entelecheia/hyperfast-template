@@ -26,32 +26,6 @@ clean-docs-build: ## remove output files from mkdocs
 
 clean: clean-docs-build ## run all clean commands
 
-##@ Releases
-
-version: ## returns the current version
-	@poetry run semantic-release print-version --current
-
-next-version: ## returns the next version
-	@poetry run semantic-release print-version --next
-
-changelog: ## returns the current changelog
-	@poetry run semantic-release changelog --released
-
-next-changelog: ## returns the next changelog
-	@poetry run semantic-release changelog --unreleased
-
-release-noop: ## release without changing anything
-	@poetry run semantic-release publish -v DEBUG --noop
-
-release-ci: ## release in CI
-	@poetry run semantic-release publish -v DEBUG -D commit_author="github-actions <action@github.com>"
-
-prerelease-noop: ## release a pre-release without changing anything
-	@poetry run semantic-release publish -v DEBUG --prerelease --noop
-
-prerelease-ci: ## release a pre-release in CI
-	@poetry run semantic-release publish --prerelease -v DEBUG -D commit_author="github-actions <action@github.com>"
-
 ##@ Git Branches
 
 show-branches: ## show all branches
@@ -70,42 +44,45 @@ dev-checkout-upstream: ## create and checkout the dev branch, and set the upstre
 main-checkout: ## checkout the main branch
 	@git checkout main
 
+##@ Releases
+
+verify-release: ## verify release
+	@npx semantic-release --verfiy-release
+
+##@ Build
+
+.PHONY: build
+build: ## build the project
+	@npm run build
+		
 ##@ Setup
 
-install-pipx: ## install pipx (pre-requisite for external tools)
-	@pipx --version &> /dev/null || pip install --user pipx || true
+install: ## install dependencies
+	@npm install
 
-install-copier: install-pipx ## install copier (pre-requisite for init-project)
-	@copier --version &> /dev/null || pipx install copier || true
+install-dev: ## install dev dependencies
+	@npm install --only=dev
 
-install-poetry: install-pipx ## install poetry (pre-requisite for install)
-	@poetry --version &> /dev/null || pipx install poetry || true
+install-node: ## install node
+	@export NVM_DIR="$${HOME}/.nvm"; \
+	[ -s "$${NVM_DIR}/nvm.sh" ] && . "$${NVM_DIR}/nvm.sh"; \
+	nvm install --lts
 
-install-commitzen: install-pipx ## install commitzen (pre-requisite for commit)
-	@cz version &> /dev/null || pipx install commitizen || true
+nvm-ls: ## list node versions
+	@export NVM_DIR="$${HOME}/.nvm"; \
+	[ -s "$${NVM_DIR}/nvm.sh" ] && . "$${NVM_DIR}/nvm.sh"; \
+	nvm ls
 
-install-precommit: install-commitzen ## install pre-commit
-	@pre-commit --version &> /dev/null || pipx install pre-commit || true
-
-install-piptools: install-pipx ## install pip-tools (pre-requisite for install)
-	@pip-compile --version &> /dev/null || pipx install pip-tools || true
-
-install-prereqs: install-pipx  install-copier install-poetry install-piptools install-precommit ## install all prerequisites
-
-install-poetry-deps: ## install poetry dependencies
-	@poetry install
-
-install-precommit-hooks: install-precommit ## install pre-commit hooks
-	@pre-commit install
-
-generate-mkdocs-reqs: ## generate requirements.txt from requirements.in
-	@poetry run pip-compile --resolver=backtracking --output-file=docs/requirements.txt docs/requirements.in
-
-remove-template: ## remove the template files (Warning: if you do this, you can't re-run init-project)
-	@rm -rf .copier-template
+set-default-node: ## set default node
+	@export NVM_DIR="$${HOME}/.nvm"; \
+	[ -s "$${NVM_DIR}/nvm.sh" ] && . "$${NVM_DIR}/nvm.sh"; \
+	nvm alias default node
 
 init-project: install-copier install-precommit-hooks ## initialize the project (Warning: do this only once!)
-	@copier --answers-file .copier-config.yaml --vcs-ref=HEAD gh:entelecheia/hyperfast-template .
+	@copier gh:entelecheia/hyperfast-template .
+
+init-git: ## initialize git
+	@git init
 
 reinit-project: install-copier ## reinitialize the project (Warning: this may overwrite existing files!)
 	@bash -c 'args=(); while IFS= read -r file; do args+=("--skip" "$$file"); done < .copierignore; copier "$${args[@]}" --answers-file .copier-config.yaml --vcs-ref=HEAD . .'
