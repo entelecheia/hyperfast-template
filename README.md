@@ -6,25 +6,24 @@
 [![conventional-commits-image]][conventional commits]
 
 <!-- Links: -->
-
-[hyperfast template]: https://github.com/entelecheia/hyperfast-template
 [license-image]: https://img.shields.io/github/license/entelecheia/hyperfast-template
 [license-url]: https://github.com/entelecheia/hyperfast-template/blob/main/LICENSE
 [version-image]: https://img.shields.io/github/v/release/entelecheia/hyperfast-template?sort=semver
 [release-date-image]: https://img.shields.io/github/release-date/entelecheia/hyperfast-template
 [release-url]: https://github.com/entelecheia/hyperfast-template/releases
 [conventional-commits-image]: https://img.shields.io/badge/Conventional%20Commits-1.0.0-%23FE5196?logo=conventionalcommits&logoColor=white
+[conventional commits]: https://conventionalcommits.org
+
 [repo-url]: https://github.com/entelecheia/hyperfast-template
 [pypi-url]: https://pypi.org/project/hyperfast-template
-[docs-url]: https://entelecheia.github.io/hyperfast-template
+[docs-url]: https://hyperfast-template.entelecheia.ai
 [changelog]: https://github.com/entelecheia/hyperfast-template/blob/main/CHANGELOG.md
 [contributing guidelines]: https://github.com/entelecheia/hyperfast-template/blob/main/CONTRIBUTING.md
-
 <!-- Links: -->
 
 A general template that helps you jump start your project
 
-- Documentation: [https://entelecheia.github.io/hyperfast-template][docs-url]
+- Documentation: [https://hyperfast-template.entelecheia.ai][docs-url]
 - GitHub: [https://github.com/entelecheia/hyperfast-template][repo-url]
 
 Hyperfast Template is a self-contained template that helps you initialize your project inside the template. It is hyperfast in the sense that the template itself is converted into a project in the blink of an eye. It is also hyperfast in the sense that it helps you jump start your project with the best practices in the dev community.
