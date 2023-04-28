@@ -6,6 +6,7 @@ site_description: >-
 # Repository
 repo_name: entelecheia/hyperfast-template
 repo_url: https://github.com/entelecheia/hyperfast-template
+edit_uri: edit/main/docs/
 
 # Copyright
 copyright: Copyright &copy; 2023 Young Joon Lee
@@ -17,8 +18,8 @@ theme:
     scheme: slate
   features:
     - navigation.expand
-    # - content.action.edit
-    # - content.action.view
+    - content.action.edit
+    - content.action.view
     - content.code.annotate
     - content.code.copy
     # - content.tabs.link
