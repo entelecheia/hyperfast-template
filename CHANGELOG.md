@@ -1,3 +1,10 @@
+## [0.5.1](https://github.com/entelecheia/hyperfast-template/compare/v0.5.0...v0.5.1) (2023-04-28)
+
+
+### Bug Fixes
+
+* **template:** comment out unused features and nav items ([8e18262](https://github.com/entelecheia/hyperfast-template/commit/8e182628ee83a02e6d30a0f707c66544c75dc7e1))
+
 ## [0.5.0](https://github.com/entelecheia/hyperfast-template/compare/v0.4.0...v0.5.0) (2023-04-28)
 
 
