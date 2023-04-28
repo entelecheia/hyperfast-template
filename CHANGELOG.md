@@ -1,3 +1,10 @@
+## [0.5.2](https://github.com/entelecheia/hyperfast-template/compare/v0.5.1...v0.5.2) (2023-04-28)
+
+
+### Bug Fixes
+
+* **template:** add edit_uri to mkdocs.yaml.jinja ([9e56d6d](https://github.com/entelecheia/hyperfast-template/commit/9e56d6d80ab57da433caad522e54f2485185926f))
+
 ## [0.5.1](https://github.com/entelecheia/hyperfast-template/compare/v0.5.0...v0.5.1) (2023-04-28)
 
 
