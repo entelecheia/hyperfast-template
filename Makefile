@@ -60,9 +60,6 @@ build: ## build the project
 install: ## install dependencies
 	@npm install
 
-install-dev: ## install dev dependencies
-	@npm install --only=dev
-
 install-node: ## install node
 	@export NVM_DIR="$${HOME}/.nvm"; \
 	[ -s "$${NVM_DIR}/nvm.sh" ] && . "$${NVM_DIR}/nvm.sh"; \
