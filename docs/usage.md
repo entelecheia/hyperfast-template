@@ -2,25 +2,12 @@
 
 ## Quickstart
 
-There are three ways to use this project:
+There are two ways to use this project:
 
-- Use [Hyperfast Template] to create a new repository
 - Use [Copier] to create a project to your local machine directly
 - Inject [Hyperfast Template] into an existing project
 
-### I. Use the template
-
-1. Click the `Use this template` button
-2. Enter a name for your repository
-3. Click `Create repository from template`
-4. Clone your new repository to your local machine
-5. Initialize your project
-   ```bash
-   make init-project
-   ```
-6. Do your work
-
-### II. Use Copier
+### I. Use Copier
 
 1. Install Copier
    ```bash
@@ -32,7 +19,7 @@ There are three ways to use this project:
    ```
 3. Do your work
 
-### III. Inject the template
+### II. Inject the template
 
 1. Install Copier
    ```bash
