@@ -43,7 +43,7 @@ The "Hyperfast Template" is designed to help you create and manage your projects
 - [x] Automated dependency updates with [Dependabot]
 - [x] Documentation using [MkDocs] and [Read the Docs]
 - [x] Consistent coding styles across different text editors with [EditorConfig] and its configuration file `.editorconfig`
-- [x] Enforced coding standards and best practices for JavaScript using [ESLint] and its configuration file `.eslintrc.json`
+- [x] Enforced coding standards and best practices for JavaScript using [ESLint]
 - [x] Consistent code style using [Prettier] and its configuration file `.prettierrc`
 - [x] Ensured code quality with [pre-commit] and its configuration file `.pre-commit-config.yaml`
 - [x] Simplified Git hooks management with [Husky]
