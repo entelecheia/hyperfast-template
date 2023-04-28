@@ -78,6 +78,12 @@ set-default-node: ## set default node
 	[ -s "$${NVM_DIR}/nvm.sh" ] && . "$${NVM_DIR}/nvm.sh"; \
 	nvm alias default node
 
+install-pipx: ## install pipx (pre-requisite for external tools)
+	@pipx --version &> /dev/null || pip install --user pipx || true
+
+install-copier: install-pipx ## install copier (pre-requisite for init-project)
+	@copier --version &> /dev/null || pipx install copier || true
+
 init-project: install-copier install-precommit-hooks ## initialize the project (Warning: do this only once!)
 	@copier gh:entelecheia/hyperfast-template .
 
