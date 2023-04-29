@@ -1,3 +1,10 @@
+## [0.6.1](https://github.com/entelecheia/hyperfast-template/compare/v0.6.0...v0.6.1) (2023-04-29)
+
+
+### Bug Fixes
+
+* **dependencies:** add mkdocs-material-extensions and pymdown-extensions ([9b53a97](https://github.com/entelecheia/hyperfast-template/commit/9b53a9795f8b9c9b676bd44a70fb49bfd53e2b1e))
+
 ## [0.6.0](https://github.com/entelecheia/hyperfast-template/compare/v0.5.2...v0.6.0) (2023-04-29)
 
 
