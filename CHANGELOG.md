@@ -1,3 +1,10 @@
+## [0.6.2](https://github.com/entelecheia/hyperfast-template/compare/v0.6.1...v0.6.2) (2023-04-29)
+
+
+### Bug Fixes
+
+* **docs:** simplify path matching in deploy-docs.yaml workflow ([971aa43](https://github.com/entelecheia/hyperfast-template/commit/971aa438f65694e56293e0b34c210c00cdb855ec))
+
 ## [0.6.1](https://github.com/entelecheia/hyperfast-template/compare/v0.6.0...v0.6.1) (2023-04-29)
 
 
