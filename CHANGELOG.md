@@ -1,3 +1,15 @@
+## [0.6.0](https://github.com/entelecheia/hyperfast-template/compare/v0.5.2...v0.6.0) (2023-04-29)
+
+
+### Features
+
+* **docs): add search, emoji, keys and new markdown extensions; refactor(docs:** add pymdownx.tabbed, pymdownx.tasklist and pymdownx.tilde; ([6495b25](https://github.com/entelecheia/hyperfast-template/commit/6495b25f1120420c79908d9cce5a5d4a90f7ca5c))
+
+
+### Bug Fixes
+
+* **template:** update mkdocs.yaml.jinja ([2e61288](https://github.com/entelecheia/hyperfast-template/commit/2e612881cd3e98d4f941e9e247477e712f4d6948))
+
 ## [0.5.2](https://github.com/entelecheia/hyperfast-template/compare/v0.5.1...v0.5.2) (2023-04-28)
 
 
