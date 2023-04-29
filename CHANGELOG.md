@@ -1,3 +1,10 @@
+## [0.6.3](https://github.com/entelecheia/hyperfast-template/compare/v0.6.2...v0.6.3) (2023-04-29)
+
+
+### Bug Fixes
+
+* **template:** comment out unused markdown extension ([69083ef](https://github.com/entelecheia/hyperfast-template/commit/69083ef1a69cbac87c5ea0d4364f25a247ac64e0))
+
 ## [0.6.2](https://github.com/entelecheia/hyperfast-template/compare/v0.6.1...v0.6.2) (2023-04-29)
 
 
