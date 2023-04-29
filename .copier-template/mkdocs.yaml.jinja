@@ -24,6 +24,10 @@ theme:
     - content.code.copy
     # - content.tabs.link
     - content.tooltips
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
   {% if favicon_path %}favicon: {{ favicon_path }} {% endif -%} # favicon: Path to the favicon image
   {% if logo_path %}logo: {{ logo_path }} {% endif -%} # logo: Path to the book logo
 
@@ -34,13 +38,30 @@ markdown_extensions:
   - pymdownx.arithmatex:
       generic: true
   - admonition
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+      emoji_index: !!python/name:materialx.emoji.twemoji
   - pymdownx.highlight:
       anchor_linenums: true
       line_spans: __span
       pygments_lang_class: true
   - pymdownx.inlinehilite
+  - pymdownx.keys
   - pymdownx.snippets
-  - pymdownx.superfences
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
 
 # Plugins
 plugins:
