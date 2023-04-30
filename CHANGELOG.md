@@ -1,3 +1,10 @@
+## [0.6.4](https://github.com/entelecheia/hyperfast-template/compare/v0.6.3...v0.6.4) (2023-04-30)
+
+
+### Bug Fixes
+
+* **mkdocs:** add navigation.indexes to features ([41112ce](https://github.com/entelecheia/hyperfast-template/commit/41112ceeafeefc45490033dd31288617b74ffe7f))
+
 ## [0.6.3](https://github.com/entelecheia/hyperfast-template/compare/v0.6.2...v0.6.3) (2023-04-29)
 
 
