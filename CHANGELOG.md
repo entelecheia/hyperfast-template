@@ -1,3 +1,10 @@
+## [0.6.5](https://github.com/entelecheia/hyperfast-template/compare/v0.6.4...v0.6.5) (2023-05-05)
+
+
+### Bug Fixes
+
+* **template:** add quotes to site_name in mkdocs.yaml.jinja ([e9261ce](https://github.com/entelecheia/hyperfast-template/commit/e9261ce82e1152ebd2fe0d3ddbab33beb517c560))
+
 ## [0.6.4](https://github.com/entelecheia/hyperfast-template/compare/v0.6.3...v0.6.4) (2023-04-30)
 
 
