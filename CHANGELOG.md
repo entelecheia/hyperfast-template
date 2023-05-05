@@ -1,3 +1,10 @@
+## [0.6.6](https://github.com/entelecheia/hyperfast-template/compare/v0.6.5...v0.6.6) (2023-05-05)
+
+
+### Bug Fixes
+
+* **copier.yaml:** update help messages for upload options ([2dc1ff7](https://github.com/entelecheia/hyperfast-template/commit/2dc1ff77da104a53f1ddbb999baf6d9a2393ef59))
+
 ## [0.6.5](https://github.com/entelecheia/hyperfast-template/compare/v0.6.4...v0.6.5) (2023-05-05)
 
 
