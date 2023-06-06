@@ -1,3 +1,11 @@
+## [0.6.7](https://github.com/entelecheia/hyperfast-template/compare/v0.6.6...v0.6.7) (2023-06-06)
+
+
+### Bug Fixes
+
+* **template:** add test-init-project command to Makefile.jinja ([5df4ac3](https://github.com/entelecheia/hyperfast-template/commit/5df4ac3de53f10700d8ee42b3c1285b4957cf64b))
+* **copier:** use safer `copier copy` command in Makefile.jinja and Makefile ([fa8b24b](https://github.com/entelecheia/hyperfast-template/commit/fa8b24b447ff24f39beaa6154eb3a4d2eedfc12b))
+
 ## [0.6.6](https://github.com/entelecheia/hyperfast-template/compare/v0.6.5...v0.6.6) (2023-05-05)
 
 
