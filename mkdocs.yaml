@@ -1,4 +1,4 @@
-site_name: Hyperfast Template
+site_name: "Hyperfast Template"
 site_url: https://hyperfast-template.entelecheia.ai
 site_author: Young Joon Lee <entelecheia@hotmail.com>
 site_description: >-
@@ -41,9 +41,9 @@ markdown_extensions:
   - admonition
   - pymdownx.caret
   - pymdownx.details
-  - pymdownx.emoji:
-      emoji_generator: !!python/name:materialx.emoji.to_svg
-      emoji_index: !!python/name:materialx.emoji.twemoji
+  # - pymdownx.emoji:
+  #     emoji_generator: "!!python/name:materialx.emoji.to_svg"
+  #     emoji_index: "!!python/name:materialx.emoji.twemoji"
   - pymdownx.highlight:
       anchor_linenums: true
       line_spans: __span
@@ -57,7 +57,7 @@ markdown_extensions:
       custom_fences:
         - name: mermaid
           class: mermaid
-          format: !!python/name:pymdownx.superfences.fence_code_format
+          format: "!!python/name:pymdownx.superfences.fence_code_format"
   - pymdownx.tabbed:
       alternate_style: true
   - pymdownx.tasklist:
