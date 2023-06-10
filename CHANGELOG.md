@@ -1,3 +1,10 @@
+## [0.7.0](https://github.com/entelecheia/hyperfast-template/compare/v0.6.7...v0.7.0) (2023-06-10)
+
+
+### Features
+
+* **env:** add .envrc template to Copier template ([1a6f80c](https://github.com/entelecheia/hyperfast-template/commit/1a6f80c73af75b231d0933c07c485ef74a178a5e))
+
 ## [0.6.7](https://github.com/entelecheia/hyperfast-template/compare/v0.6.6...v0.6.7) (2023-06-06)
 
 
