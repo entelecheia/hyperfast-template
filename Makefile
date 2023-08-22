@@ -97,7 +97,7 @@ install-precommit-hooks: install-precommit ## install pre-commit hooks
 	@pre-commit install
 
 init-project: install-copier install-precommit-hooks ## initialize the project (Warning: do this only once!)
-	@copier copy --trust gh:entelecheia/hyperfast-template .
+	@copier copy --trust --vcs-ref=HEAD  gh:entelecheia/hyperfast-template .
 
 reinit-project: install-copier ## reinitialize the project (Warning: this may overwrite existing files!)
 	@bash -c 'args=(); while IFS= read -r file; do args+=("--skip" "$$file"); done < .copierignore; copier copy --trust "$${args[@]}" --answers-file .copier-config.yaml --vcs-ref=HEAD . .'
