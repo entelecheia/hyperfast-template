@@ -97,7 +97,7 @@ install-precommit-hooks: install-precommit ## install pre-commit hooks
 	@pre-commit install
 
 init-project: install-copier install-precommit-hooks ## initialize the project (Warning: do this only once!)
-	@copier copy --trust gh:entelecheia/hyperfast-template .
+	@copier copy --trust {%- if project_name.endswith('-template') %} --vcs-ref=HEAD{% endif %}  gh:entelecheia/hyperfast-template .
 
 {% if project_name == 'hyperfast-template' -%}
 reinit-project: install-copier ## reinitialize the project (Warning: this may overwrite existing files!)
