@@ -1,3 +1,11 @@
+## [0.7.1](https://github.com/entelecheia/hyperfast-template/compare/v0.7.0...v0.7.1) (2023-08-22)
+
+
+### Bug Fixes
+
+* **copier-template:** adjust init-project command to change vcs-ref conditionally ([17adfd7](https://github.com/entelecheia/hyperfast-template/commit/17adfd7fd6eccf6cab43b838a9a0095241e4968b))
+* **makefile:** replace UNSAFE flag with trust in copier commands ([721faa1](https://github.com/entelecheia/hyperfast-template/commit/721faa14564d347ab0a05abf445820f586c7ce8e))
+
 ## [0.7.0](https://github.com/entelecheia/hyperfast-template/compare/v0.6.7...v0.7.0) (2023-06-10)
 
 
