@@ -1,3 +1,11 @@
+## [0.8.0](https://github.com/entelecheia/hyperfast-template/compare/v0.7.1...v0.8.0) (2023-10-19)
+
+
+### Features
+
+* **.copier-template:** add project initialization tests, add trust flag to reinitialization scripts ([756181c](https://github.com/entelecheia/hyperfast-template/commit/756181ccf427b68f99f887d1a6a9900c64b93640))
+* **Makefile:** add trust flag to reinit-project-force command ([34068ad](https://github.com/entelecheia/hyperfast-template/commit/34068ad324e96b8a8765580311690664d2cfa699))
+
 ## [0.7.1](https://github.com/entelecheia/hyperfast-template/compare/v0.7.0...v0.7.1) (2023-08-22)
 
 
