@@ -97,10 +97,10 @@ install-precommit-hooks: install-precommit ## install pre-commit hooks
 	@pre-commit install
 
 init-project: install-copier install-precommit-hooks ## initialize the project (Warning: do this only once!)
-	@copier gh:entelecheia/hyperfast-template .
+	@copier copy --trust gh:entelecheia/hyperfast-template .
 
 reinit-project: install-copier ## reinitialize the project (Warning: this may overwrite existing files!)
-	@bash -c 'args=(); while IFS= read -r file; do args+=("--skip" "$$file"); done < .copierignore; copier "$${args[@]}" --answers-file .copier-config.yaml --vcs-ref=HEAD . .'
+	@bash -c 'args=(); while IFS= read -r file; do args+=("--skip" "$$file"); done < .copierignore; copier copy "$${args[@]}" --answers-file .copier-config.yaml --vcs-ref=HEAD . .'
 
 reinit-project-force: install-copier ## initialize the project ignoring existing files (Warning: this will overwrite existing files!)
-	@bash -c 'args=(); while IFS= read -r file; do args+=("--skip" "$$file"); done < .copierignore; copier "$${args[@]}" --answers-file .copier-config.yaml --trust --force --vcs-ref=HEAD . .'
+	@bash -c 'args=(); while IFS= read -r file; do args+=("--skip" "$$file"); done < .copierignore; copier copy "$${args[@]}" --answers-file .copier-config.yaml --trust --force --vcs-ref=HEAD . .'
