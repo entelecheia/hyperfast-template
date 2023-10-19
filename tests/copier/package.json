@@ -1,7 +1,7 @@
 {
     "name": "hyperfast-template",
-    "version": "0.7.1",
-    "description": "A general template that helps you jump start your project",
+    "version": "1.0.0",
+    "description": "A versatile project template designed to accelerate development and streamline project management using best practices and modern tools.",
     "author": "Young Joon Lee <entelecheia@hotmail.com>",
     "license": "MIT",
     "repository": {
@@ -14,19 +14,17 @@
     "homepage": "https://hyperfast-template.entelecheia.ai",
     "scripts": {
         "prebuild": "semantic-release --no-ci --dry-run --plugins @semantic-release/commit-analyzer @semantic-release/exec",
-        "prepare": "husky install",
         "test": "echo \"No test specified. Please add tests to <package.json>\" && exit 0"
     },
     "devDependencies": {
-        "@semantic-release/changelog": "^6.0.3",
-        "@semantic-release/commit-analyzer": "^11.0.0",
+        "@semantic-release/changelog": "^6.0.2",
+        "@semantic-release/commit-analyzer": "^9.0.2",
         "@semantic-release/git": "^10.0.1",
-        "@semantic-release/github": "^9.2.1",
-        "@semantic-release/npm": "^11.0.0",
-        "@semantic-release/release-notes-generator": "^12.0.0",
-        "conventional-changelog-conventionalcommits": "^7.0.2",
-        "husky": "^8.0.3",
-        "prettier": "3.0.3",
-        "semantic-release": "^22.0.5"
+        "@semantic-release/github": "^8.0.7",
+        "@semantic-release/npm": "^9.0.2",
+        "@semantic-release/release-notes-generator": "^10.0.3",
+        "conventional-changelog-conventionalcommits": "^5.0.0",
+        "prettier": "2.8.8",
+        "semantic-release": "^20.1.0"
     }
 }

@@ -15,7 +15,7 @@ The "Hyperfast Template" is designed to help you create and manage your projects
    ```
 2. To create a new project, run:
    ```bash
-   copier gh:entelecheia/hyperfast-template path/to/destination
+   copier copy --trust gh:entelecheia/hyperfast-template path/to/destination
    ```
 3. Start working on your new project!
 
@@ -27,6 +27,6 @@ The "Hyperfast Template" is designed to help you create and manage your projects
    ```
 2. Navigate to the root of your existing project, then run:
    ```bash
-   copier gh:entelecheia/hyperfast-template .
+   copier copy --trust gh:entelecheia/hyperfast-template .
    ```
 3. Continue working on your project with the added benefits of the Hyperfast Template.

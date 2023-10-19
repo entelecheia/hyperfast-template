@@ -1,3 +1,33 @@
+## [0.7.1](https://github.com/entelecheia/hyperfast-template/compare/v0.7.0...v0.7.1) (2023-08-22)
+
+
+### Bug Fixes
+
+* **copier-template:** adjust init-project command to change vcs-ref conditionally ([17adfd7](https://github.com/entelecheia/hyperfast-template/commit/17adfd7fd6eccf6cab43b838a9a0095241e4968b))
+* **makefile:** replace UNSAFE flag with trust in copier commands ([721faa1](https://github.com/entelecheia/hyperfast-template/commit/721faa14564d347ab0a05abf445820f586c7ce8e))
+
+## [0.7.0](https://github.com/entelecheia/hyperfast-template/compare/v0.6.7...v0.7.0) (2023-06-10)
+
+
+### Features
+
+* **env:** add .envrc template to Copier template ([1a6f80c](https://github.com/entelecheia/hyperfast-template/commit/1a6f80c73af75b231d0933c07c485ef74a178a5e))
+
+## [0.6.7](https://github.com/entelecheia/hyperfast-template/compare/v0.6.6...v0.6.7) (2023-06-06)
+
+
+### Bug Fixes
+
+* **template:** add test-init-project command to Makefile.jinja ([5df4ac3](https://github.com/entelecheia/hyperfast-template/commit/5df4ac3de53f10700d8ee42b3c1285b4957cf64b))
+* **copier:** use safer `copier copy` command in Makefile.jinja and Makefile ([fa8b24b](https://github.com/entelecheia/hyperfast-template/commit/fa8b24b447ff24f39beaa6154eb3a4d2eedfc12b))
+
+## [0.6.6](https://github.com/entelecheia/hyperfast-template/compare/v0.6.5...v0.6.6) (2023-05-05)
+
+
+### Bug Fixes
+
+* **copier.yaml:** update help messages for upload options ([2dc1ff7](https://github.com/entelecheia/hyperfast-template/commit/2dc1ff77da104a53f1ddbb999baf6d9a2393ef59))
+
 ## [0.6.5](https://github.com/entelecheia/hyperfast-template/compare/v0.6.4...v0.6.5) (2023-05-05)
 
 

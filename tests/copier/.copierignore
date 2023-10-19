@@ -1,0 +1,3 @@
+.copierignore
+package.json
+CHANGELOG.md
