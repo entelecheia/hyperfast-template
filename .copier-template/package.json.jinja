@@ -1,17 +1,17 @@
 {
-    "name": "{{ project_name }}",
+    "name": "`{{ project_name }}`",
     "version": "1.0.0",
-    "description": "{{ project_short_description }}",
-    "author": "{{ author }} <{{ email }}>",
-    "license": "{{ project_license }}",
+    "description": "`{{ project_short_description }}`",
+    "author": "`{{ author }}` <`{{ email }}`>",
+    "license": "`{{ project_license }}`",
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/{{ github_username }}/{{ github_repo_name }}"
+        "url": "git+https://github.com/`{{ github_username }}`/`{{ github_repo_name }}`"
     },
     "bugs": {
-        "url": "https://github.com/{{ github_username }}/{{ github_repo_name }}/issues"
+        "url": "https://github.com/`{{ github_username }}`/`{{ github_repo_name }}`/issues"
     },
-    "homepage": "{{ documentation_url }}",
+    "homepage": "`{{ documentation_url }}`",
     "scripts": {
         "prebuild": "semantic-release --no-ci --dry-run --plugins @semantic-release/commit-analyzer @semantic-release/exec",
         "test": "echo \"No test specified. Please add tests to <package.json>\" && exit 0"
@@ -19,6 +19,7 @@
     "devDependencies": {
         "@semantic-release/changelog": "^6.0.3",
         "@semantic-release/commit-analyzer": "^11.0.0",
+        "@semantic-release/exec": "^6.0.3",
         "@semantic-release/git": "^10.0.1",
         "@semantic-release/github": "^9.2.1",
         "@semantic-release/npm": "^11.0.0",
