@@ -6,8 +6,10 @@
     workflow_dispatch:
     push:
       branches:
-        - main
-        - beta
+        - '`{{release_branch_name}}`'
+        - 'beta*'
+        - 'alpha*'
+        - 'rc*'
       paths:
         - 'src/**'
         - 'static/**'

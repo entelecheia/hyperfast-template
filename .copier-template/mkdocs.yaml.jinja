@@ -1,15 +1,15 @@
-site_name: "{{ friendly_name }}"
-site_url: {{ documentation_url }}
-site_author: {{ author }} <{{ email }}>
+site_name: "`{{ friendly_name }}`"
+site_url: `{{ documentation_url }}`
+site_author: `{{ author }}` <`{{ email }}`>
 site_description: >-
-  {{ project_short_description }}
+  `{{ project_short_description }}`
 # Repository
-repo_name: {{ github_username }}/{{ github_repo_name }}
-repo_url: https://github.com/{{ github_username }}/{{ github_repo_name }}
+repo_name: `{{ github_username }}`/`{{ github_repo_name }}`
+repo_url: https://github.com/`{{ github_username }}`/`{{ github_repo_name }}`
 edit_uri: edit/main/docs/
 
 # Copyright
-copyright: Copyright &copy; {{ copyright_year }} {{ author }}
+copyright: Copyright &copy; `{{ copyright_year }}` `{{ author }}`
 
 # Configuration
 theme:
@@ -29,8 +29,8 @@ theme:
     - search.share
     - search.suggest
     - toc.follow
-  {% if favicon_path %}favicon: {{ favicon_path }} {% endif -%} # favicon: Path to the favicon image
-  {% if logo_path %}logo: {{ logo_path }} {% endif -%} # logo: Path to the book logo
+  {% if favicon_path %}favicon: `{{ favicon_path }}` {% endif -%} # favicon: Path to the favicon image
+  {% if logo_path %}logo: `{{ logo_path }}` {% endif -%} # logo: Path to the book logo
 
 # Extensions
 markdown_extensions:
@@ -83,7 +83,7 @@ extra_javascript:
 extra:
   analytics:
     provider: google
-    property: {{ google_analytics_id }}
+    property: `{{ google_analytics_id }}`
 {% endif -%}
 
 # Page tree
