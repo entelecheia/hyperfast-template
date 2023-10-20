@@ -1,5 +1,5 @@
 # Changes here will be overwritten by Copier; do NOT edit manually
-_commit: v0.8.0-2-g9f7307e
+_commit: v0.8.0-9-g25a02b6
 _src_path: .
 author: Young Joon Lee
 build_and_release: true
@@ -26,6 +26,7 @@ project_license: MIT
 project_name: hyperfast-template
 project_short_description: A versatile project template designed to accelerate development
     and streamline project management using best practices and modern tools.
+release_branch_name: release
 upload_to_release: true
 upload_to_repository: true
 use_source_code_skeleton: true
