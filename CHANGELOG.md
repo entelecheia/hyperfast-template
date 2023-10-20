@@ -1,3 +1,16 @@
+## [0.9.0](https://github.com/entelecheia/hyperfast-template/compare/v0.8.0...v0.9.0) (2023-10-20)
+
+
+### Features
+
+* **package.json.jinja:** add @semantic-release/exec to devDependencies ([6f3f24d](https://github.com/entelecheia/hyperfast-template/commit/6f3f24d1df68669ae85a173dacb0ed01238b3fdc))
+* **copier.yaml:** add release_branch_name option ([abc2c94](https://github.com/entelecheia/hyperfast-template/commit/abc2c945762fce5c15a2246182945a6d84f3978e))
+
+
+### Bug Fixes
+
+* **copier.yaml:** correct typo in release_branch_name default value ([63fc523](https://github.com/entelecheia/hyperfast-template/commit/63fc52395687d0f588ddd70274f93c135266d176))
+
 ## [0.8.0](https://github.com/entelecheia/hyperfast-template/compare/v0.7.1...v0.8.0) (2023-10-19)
 
 
