@@ -8,8 +8,8 @@ _envops:
   comment_end_string: '#}'
   comment_start_string: '{#'
   keep_trailing_newline: true
-  variable_end_string: '}}``'
-  variable_start_string: '``{{'
+  variable_end_string: '}}`'
+  variable_start_string: '`{{'
 
 _answers_file: .copier-config.yaml
 
