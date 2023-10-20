@@ -1,45 +1,45 @@
 ---
-  name: Release
+name: Release
 
-  on:
-    workflow_call:
-    workflow_dispatch:
-    push:
-      branches:
-        - '`{{release_branch_name}}`'
-        - 'beta*'
-        - 'alpha*'
-        - 'rc*'
-      paths:
-        - 'src/**'
-        - 'static/**'
-        - 'package.json'
-        - '.copier-template/**'
+on:
+  workflow_call:
+  workflow_dispatch:
+  push:
+    branches:
+      - '`{{release_branch_name}}`'
+      - 'beta*'
+      - 'alpha*'
+      - 'rc*'
+    paths:
+      - 'src/**'
+      - 'static/**'
+      - 'package.json'
+      - '.copier-template/**'
 
-  permissions:
-    contents: write
-    issues: write
-    pull-requests: write
+permissions:
+  contents: write
+  issues: write
+  pull-requests: write
 
-  jobs:
-    release:
-      name: Release
-      runs-on: ubuntu-latest
-      steps:
-        - name: Checkout
-          uses: actions/checkout@v4
+jobs:
+  release:
+    name: Release
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
 
-        - name: Setup Node.js
-          uses: actions/setup-node@v3
-          with:
-            node-version: 'lts/*'
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 'lts/*'
 
-        - name: Install dependencies
-          run: npm ci
+      - name: Install dependencies
+        run: npm ci
 
-        - name: Semantic release
-          id: semantic_release
-          run: npx semantic-release
-          env:
-            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-            NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+      - name: Semantic release
+        id: semantic_release
+        run: npx semantic-release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
