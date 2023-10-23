@@ -1,3 +1,10 @@
+## [0.9.1](https://github.com/entelecheia/hyperfast-template/compare/v0.9.0...v0.9.1) (2023-10-23)
+
+
+### Bug Fixes
+
+* **github-workflows:** upgrade setup-node action to v4 ([e7da23d](https://github.com/entelecheia/hyperfast-template/commit/e7da23d09d32917f4ea8314ebf44e401f5b3e5ce))
+
 ## [0.9.0](https://github.com/entelecheia/hyperfast-template/compare/v0.8.0...v0.9.0) (2023-10-20)
 
 
