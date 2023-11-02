@@ -1,3 +1,18 @@
+## [0.9.2](https://github.com/entelecheia/hyperfast-template/compare/v0.9.1...v0.9.2) (2023-11-02)
+
+
+### Bug Fixes
+
+* **.envrc.jinja:** add bash shebang and update export PROJECT_ROOT ([1c3e437](https://github.com/entelecheia/hyperfast-template/commit/1c3e437d90f5df011e09feb356400c32dc34ccd9))
+* **dependencies:** upgrade setup-node to v4 in github workflows ([70c0fa3](https://github.com/entelecheia/hyperfast-template/commit/70c0fa39bef3d4d7ca7f23f75a72ee7ec730d5ae))
+
+## [0.9.1](https://github.com/entelecheia/hyperfast-template/compare/v0.9.0...v0.9.1) (2023-10-23)
+
+
+### Bug Fixes
+
+* **github-workflows:** upgrade setup-node action to v4 ([e7da23d](https://github.com/entelecheia/hyperfast-template/commit/e7da23d09d32917f4ea8314ebf44e401f5b3e5ce))
+
 ## [0.9.0](https://github.com/entelecheia/hyperfast-template/compare/v0.8.0...v0.9.0) (2023-10-20)
 
 
