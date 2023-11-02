@@ -1,2 +1,4 @@
+#!/usr/bin/env bash
 export PROJECT_NAME="`{{project_name}}`"
-export PROJECT_ROOT="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+PROJECT_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+export PROJECT_ROOT
