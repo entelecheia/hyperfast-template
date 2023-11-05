@@ -53,4 +53,4 @@ jobs:
           body: This is an automatically generated pull request created by npm run release.
           labels: automated-pr, release
           branch: main
-          delete-branch: true
+          delete-branch: false
