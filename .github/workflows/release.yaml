@@ -43,3 +43,14 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v4
+        with:
+          commit-message: Release ${{github.ref}}
+          title: Release ${{github.ref}}
+          body: This is an automatically generated pull request created by npm run release.
+          base: main
+          labels: automated-pr, release
+          branch: release/${{ github.sha }}
+          delete-branch: true
