@@ -15,6 +15,7 @@ on:
       - 'static/**'
       - 'package.json'
       - '.copier-template/**'
+      - '.github/workflows/release.yaml'
 
 permissions:
   contents: write
@@ -50,7 +51,6 @@ jobs:
           commit-message: Release ${{github.ref}}
           title: Release ${{github.ref}}
           body: This is an automatically generated pull request created by npm run release.
-          base: main
           labels: automated-pr, release
-          branch: release/${{ github.sha }}
+          branch: main
           delete-branch: true

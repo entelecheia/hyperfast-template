@@ -11,7 +11,7 @@ on:
       - 'src/**'
       - 'static/**'
       - 'package.json'
-      -  '.github/workflows/test.yaml'
+      - '.github/workflows/test.yaml'
 
 permissions:
   contents: write
