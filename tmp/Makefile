@@ -26,24 +26,6 @@ clean-docs-build: ## remove output files from mkdocs
 
 clean: clean-docs-build ## run all clean commands
 
-##@ Git Branches
-
-show-branches: ## show all branches
-	@git show-branch --list
-
-dev-checkout: ## checkout the dev branch
-	@branch=$(shell echo $${branch:-"dev"}) && \
-	    git show-branch --list | grep -q $${branch} && \
-		git checkout $${branch}
-
-dev-checkout-upstream: ## create and checkout the dev branch, and set the upstream
-	@branch=$(shell echo $${branch:-"dev"}) && \
-		git checkout -B $${branch} && \
-		git push --set-upstream origin $${branch} || true
-
-main-checkout: ## checkout the main branch
-	@git checkout main
-
 ##@ Releases
 
 verify-release: ## verify release
@@ -97,14 +79,18 @@ install-precommit-hooks: install-precommit ## install pre-commit hooks
 	@pre-commit install
 
 init-project: install-copier install-precommit-hooks ## initialize the project (Warning: do this only once!)
-	@copier copy --trust --vcs-ref=HEAD  gh:entelecheia/hyperfast-template .
+	@copier copy --trust gh:entelecheia/hyperfast-template .
 
 reinit-project: install-copier ## reinitialize the project (Warning: this may overwrite existing files!)
-	@bash -c 'args=(); while IFS= read -r file; do args+=("--skip" "$$file"); done < .copierignore; copier copy --trust "$${args[@]}" --answers-file .copier-config.yaml --vcs-ref=HEAD . .'
+	@bash -c 'args=(); while IFS= read -r file; do args+=("--skip" "$$file"); done < .copierignore; copier copy "$${args[@]}" --answers-file .copier-config.yaml --trust --vcs-ref=HEAD . .'
 
 reinit-project-force: install-copier ## initialize the project ignoring existing files (Warning: this will overwrite existing files!)
-	@bash -c 'args=(); while IFS= read -r file; do args+=("--skip" "$$file"); done < .copierignore; copier copy --trust "$${args[@]}" --answers-file .copier-config.yaml --force --vcs-ref=HEAD . .'
+	@bash -c 'args=(); while IFS= read -r file; do args+=("--skip" "$$file"); done < .copierignore; copier copy "$${args[@]}" --answers-file .copier-config.yaml --trust --force --vcs-ref=HEAD . .'
 
-test-init-project: install-copier ## initialize the project ignoring existing files (Warning: this will overwrite existing files!)
-	@bash -c 'args=(); while IFS= read -r file; do args+=("--skip" "$$file"); done < .copierignore; copier copy --trust "$${args[@]}" --answers-file .copier-config.yaml --force --vcs-ref=HEAD . tests/copier'
+test-init-project: install-copier ## test initializing the project to a temporary directory
+	@copier copy --answers-file .copier-docker-config.yaml --trust --vcs-ref=HEAD . tmp
+	@rm -rf tmp/.git
+
+test-init-project-force: install-copier ## test initializing the project to a temporary directory forcing overwrite
+	@copier copy --answers-file .copier-docker-config.yaml --trust --force --vcs-ref=HEAD . tmp
 	@rm -rf tmp/.git
