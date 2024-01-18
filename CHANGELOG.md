@@ -1,3 +1,13 @@
+## [0.9.3](https://github.com/entelecheia/hyperfast-template/compare/v0.9.2...v0.9.3) (2024-01-18)
+
+
+### Bug Fixes
+
+* **makefile:** update init project commands ([3a6b78e](https://github.com/entelecheia/hyperfast-template/commit/3a6b78e1850cccdf2470d0c673794079792bb711))
+* **workflow:** upgrade actions/cache to v4 ([1e53223](https://github.com/entelecheia/hyperfast-template/commit/1e532237dc1ae8f617e5816e2be536af4125824c))
+* **github-workflows:** upgrade setup-python to v5 ([e3a5566](https://github.com/entelecheia/hyperfast-template/commit/e3a5566903216d7281750d6495088a8a024ad531))
+* **makefile:** use args variable to skip files ([4772f46](https://github.com/entelecheia/hyperfast-template/commit/4772f46f1cbf967b32883e6146f5814afd5bb5f5))
+
 ## [0.9.2](https://github.com/entelecheia/hyperfast-template/compare/v0.9.1...v0.9.2) (2023-11-02)
 
 
